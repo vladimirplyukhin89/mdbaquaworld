@@ -1,0 +1,45 @@
+@import "../../../css/vars.css";
+
+.header__navigation {
+  animation: toggle 1.5s ease forwards;
+}
+
+.header__navigation:hover {
+  color: var(--bg-grey) !important;
+  animation: toggle 0.5s ease forwards;
+}
+
+.header__navigation-icon {
+  color: var(--bg-deepblue) !important;
+}
+
+.header__links {
+  display: flex;
+  justify-content: center;
+}
+
+.header__link:hover {
+  color: var(--bg-deepblue) !important;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  max-width: 185px !important;
+}
+
+@keyframes toggle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__links {
+    font-size: 20px;
+  }
+}

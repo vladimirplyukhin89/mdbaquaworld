@@ -3,6 +3,5 @@
 @import "./vars";
 
 body {
-  font-family: Roboto, serif;
   color: var(--clr-black-3);
 }

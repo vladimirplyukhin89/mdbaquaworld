@@ -1,13 +1,16 @@
 import React from "react";
-import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
+import { MDBContainer } from "mdb-react-ui-kit";
 
+import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 
 function App() {
   return (
-    <MDBContainer fluid>
+    <>
+      <Header />
       <Hero />
-    </MDBContainer>
+      <MDBContainer fluid></MDBContainer>
+    </>
   );
 }
 
