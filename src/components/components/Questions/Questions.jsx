@@ -11,7 +11,7 @@ import "./Questions.css";
 export const Questions = () => {
   return (
     <MDBContainer fluid className="questions">
-      <h3 className="pt-5 text-center text-white">Часто задаваемые вопросы</h3>
+      <h3 className="pt-5 fw-bolder text-center">Часто задаваемые вопросы</h3>
       <MDBAccordion flush initialActive={1} className="p-5">
         <MDBAccordionItem
           collapseId={1}
