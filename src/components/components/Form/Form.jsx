@@ -13,6 +13,7 @@ export const Form = () => {
           left: 0,
           width: "100%",
           height: "100%",
+          maxHeight: "100%",
           objectFit: "cover",
           zIndex: -2
         }}
@@ -61,7 +62,7 @@ export const Form = () => {
 
           <MDBInput
             wrapperClass="mb-4 textarea-lg"
-            textarea
+            textarea="true"
             id="form4Example4"
             rows={6}
             label="Message"

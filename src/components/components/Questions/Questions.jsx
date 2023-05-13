@@ -12,12 +12,13 @@ export const Questions = () => {
   return (
     <MDBContainer fluid className="questions">
       <h3 className="pt-5 fw-bolder text-center">Часто задаваемые вопросы</h3>
-      <MDBAccordion flush initialActive={1} className="p-5">
+      <MDBAccordion flush initialActive={1} className="p-5 questions__wrapper">
         <MDBAccordionItem
           collapseId={1}
+          className="questions__text"
           headerTitle={
             <>
-              <MDBIcon fas icon="tint" className="questions__text" /> &nbsp; В
+              <MDBIcon fas icon="tint" className="questions__icon" /> &nbsp; В
               каких отраслях вы работаете?
             </>
           }>
@@ -38,9 +39,10 @@ export const Questions = () => {
         </MDBAccordionItem>
         <MDBAccordionItem
           collapseId={2}
+          className="questions__text"
           headerTitle={
             <>
-              <MDBIcon fas icon="tint" className="questions__text" /> &nbsp; Для
+              <MDBIcon fas icon="tint" className="questions__icon" /> &nbsp; Для
               чего предназначены ваши станции?
             </>
           }>
@@ -52,9 +54,10 @@ export const Questions = () => {
         </MDBAccordionItem>
         <MDBAccordionItem
           collapseId={3}
+          className="questions__text"
           headerTitle={
             <>
-              <MDBIcon fas icon="tint" className="questions__text" /> &nbsp; В
+              <MDBIcon fas icon="tint" className="questions__icon" /> &nbsp; В
               чем основные отличия двух вариантов исполнения?
             </>
           }>

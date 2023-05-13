@@ -1,10 +1,26 @@
 .questions {
   background-color: var(--bg-lightblue);
   color: var(--bg-deepblue);
+
+  margin: 0 auto;
 }
 
-.questions__text {
-  color: var(--bg-deepblue);
-  font-size: 21px;
+.questions__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.questions__icon {
+  font-size: 20px;
   padding-right: 10px;
+  color: var(--bg-turquoise);
+}
+
+.questions__text:hover .questions__icon {
+  color: var(--bg-deepblue);
+}
+
+.questions__text:hover {
+  color: var(--bg-deepblue);
 }

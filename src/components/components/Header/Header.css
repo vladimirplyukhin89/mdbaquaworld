@@ -25,6 +25,7 @@
 .header__contacts {
   display: flex;
   flex-direction: column-reverse;
+  margin-left: 10px;
   width: 100%;
   max-width: 185px !important;
 }

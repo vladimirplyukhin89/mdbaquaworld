@@ -24,8 +24,8 @@ export const Partners = () => {
             <div className="slider-track">
               {images.map((obj, i) => {
                 return (
-                  <ul className="slide">
-                    <li key={i}>
+                  <ul className="slide" key={i}>
+                    <li>
                       <img src={obj.img} alt={obj.alt} />
                     </li>
                   </ul>

@@ -2,10 +2,11 @@ import React from "react";
 
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { Partners } from "./components/Partners";
+import { Areas } from "./components/Areas";
+import { Countries } from "./components/Countries";
 import { Form } from "./components/Form";
 import { Questions } from "./components/Questions";
-import { Countries } from "./components/Countries";
-import { Partners } from "./components/Partners";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Hero />
       <Partners />
+      <Areas />
       <Countries />
       <Form />
       <Questions />
