@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  MDBContainer,
-  MDBInput,
-  MDBCol,
-  MDBRow,
-  MDBCheckbox,
-  MDBBtn
-} from "mdb-react-ui-kit";
+import { MDBContainer, MDBInput, MDBBtn } from "mdb-react-ui-kit";
 
 import bgVideo from "./video/form.mp4";
 

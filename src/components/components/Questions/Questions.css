@@ -1,0 +1,10 @@
+.questions {
+  background-color: var(--bg-lightblue);
+  color: var(--bg-deepblue);
+}
+
+.questions__text {
+  color: var(--bg-deepblue);
+  font-size: 21px;
+  padding-right: 10px;
+}
