@@ -1,0 +1,8 @@
+@import "~normalize.css";
+@import "reset.css";
+@import "./vars";
+
+body {
+  font-family: Roboto, serif;
+  color: var(--clr-black-3);
+}
