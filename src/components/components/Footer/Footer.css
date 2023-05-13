@@ -1,0 +1,40 @@
+.footer__links:hover {
+  color: var(--bg-turquoise);
+}
+
+.footer__links-link:hover {
+  color: var(--clr-black-3) !important;
+}
+
+.footer__navigation-icon {
+  color: var(--bg-deepblue) !important;
+}
+
+.social-icon {
+  transition: transform 0.5s;
+}
+
+.social-icon:hover {
+  transform: scale(1.3);
+}
+
+.social-icon__icon {
+  font-size: 30px;
+}
+
+.social-icon__icon.fa-instagram {
+  color: #e4405f;
+}
+
+.social-icon__icon.fa-vk {
+  color: #4c75a3;
+}
+
+.social-icon__icon.fa-facebook-f {
+  color: #1877f2;
+}
+
+.footer__rights {
+  background-color: var(--bg-overlay);
+  color: var(--clr-black-3);
+}
