@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { Form } from "./components/Form";
 import { Questions } from "./components/Questions";
 import { Countries } from "./components/Countries";
+import { Partners } from "./components/Partners";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Partners />
       <Countries />
       <Form />
       <Questions />
