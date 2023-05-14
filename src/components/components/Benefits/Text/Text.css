@@ -1,0 +1,18 @@
+.benefits__list {
+  padding-left: 0;
+}
+
+.benefits__icon {
+  color: var(--bg-blueline);
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .benefits__list {
+    padding-left: 2rem;
+  }
+
+  .benefits__icon {
+    margin-right: 20px;
+  }
+}

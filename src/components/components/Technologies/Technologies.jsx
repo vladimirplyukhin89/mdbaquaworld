@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
+import { MDBContainer } from "mdb-react-ui-kit";
 
 import { CardContainer } from "./CardContainer/CardContainer";
 import { Thesis } from "./Thesis/Thesis";

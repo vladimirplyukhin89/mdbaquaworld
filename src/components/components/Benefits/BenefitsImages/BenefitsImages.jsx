@@ -1,11 +1,11 @@
 import React from "react";
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
-import { images } from "./img";
+import { images } from "../img/index";
 
-import "../../Benefits/BenefitsImages/BenefitsImages.css";
+import "./BenefitsImages.css";
 
-export const ListContainer = () => {
+export const BenefitsImages = () => {
   return (
     <MDBRow className="mt-5">
       {images.map((item, i) => (

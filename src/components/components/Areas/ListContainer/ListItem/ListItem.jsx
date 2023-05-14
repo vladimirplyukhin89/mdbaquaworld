@@ -2,6 +2,7 @@ import React from "react";
 
 import "./ListItem.css";
 
+// Если потребуется поменять, то добавить в ListContainer
 export const ListItem = ({ img, alt, text }) => {
   return (
     <>

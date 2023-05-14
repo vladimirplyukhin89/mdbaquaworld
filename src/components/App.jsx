@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Partners } from "./components/Partners";
 import { Areas } from "./components/Areas";
+import { Benefits } from "./components/Benefits";
 import { Technologies } from "./components/Technologies";
 import { Countries } from "./components/Countries";
 import { Form } from "./components/Form";
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Partners />
       <Areas />
+      <Benefits />
       <Technologies />
       <Countries />
       <Form />

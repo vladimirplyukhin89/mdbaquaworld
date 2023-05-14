@@ -1,21 +1,35 @@
-.application {
+.area {
   padding: 20px;
 
   color: var(--bg-deepblue);
   background-color: var(--bg-lightblue);
 }
 
-.application__title {
+.area__title {
   color: var(--bg-deepblue);
   font-weight: 600;
   text-align: center;
   margin: 2rem 0;
 }
 
-.application__subtitle {
+.area__subtitle {
   color: var(--clr-white);
-  text-align: center;
-  line-height: 1.7rem;
-  margin: 0 3rem;
   margin-bottom: 2rem;
+
+  padding-left: 0;
+}
+
+.area__icon {
+  color: var(--bg-blueline);
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .area__icon {
+    margin-right: 20px;
+  }
+
+  .area__subtitle {
+    padding-left: 2rem;
+  }
 }

@@ -67,10 +67,10 @@ export const Footer = () => {
           </MDBCol>
 
           <MDBCol md="4" lg="2" xl="2" className="px-2 mb-4 footer__links">
-            <h6 className="text-uppercase fw-bold mb-4 text-left">
+            <h6 className="text-uppercase fw-bold mb-4 text-sm-left text-md-center">
               Мы в соцсетях:
             </h6>
-            <div className="d-flex justify-content-left align-items-center">
+            <div className="d-flex justify-content-center align-items-center">
               <a
                 href="https://instagram.com/akvamir_samara"
                 className="mx-2 social-icon"
@@ -110,7 +110,6 @@ export const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      {/* </section> */}
 
       <MDBContainer fluid className="footer__rights">
         <div className="text-center p-4">

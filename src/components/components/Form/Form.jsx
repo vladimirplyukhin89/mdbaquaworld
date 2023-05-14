@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBContainer, MDBInput, MDBBtn } from "mdb-react-ui-kit";
+import { MDBContainer, MDBInput, MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 
 import bgVideo from "./video/form.mp4";
 
@@ -79,9 +79,13 @@ export const Form = () => {
         defaultChecked
       /> */}
 
-          <MDBBtn type="submit" className="mb-4" block>
-            Отправить
-          </MDBBtn>
+          <div>
+            <MDBRipple className="mb-4 w-100">
+              <MDBBtn type="submit" className="w-100">
+                Отправить
+              </MDBBtn>
+            </MDBRipple>
+          </div>
         </form>
       </MDBContainer>
     </div>

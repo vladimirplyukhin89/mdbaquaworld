@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBBtn } from "mdb-react-ui-kit";
+import { MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 
 import bgVideo from "./video/hero.mp4";
 
@@ -29,9 +29,11 @@ export const Hero = () => {
               <br /> Экономим Ваши ресурсы, делая автоматизированные системы
               очистки воды доступными.
             </h4>
-            <MDBBtn className="btn btn-lg" href="#form" role="button">
-              Оставить заявку
-            </MDBBtn>
+            <MDBRipple>
+              <MDBBtn className="btn btn-lg" href="#form" role="button">
+                Оставить заявку
+              </MDBBtn>
+            </MDBRipple>
           </div>
         </div>
       </div>
