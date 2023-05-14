@@ -1,6 +1,6 @@
 .countries {
   background-color: var(--bg-lightblue);
-  color: var(--clr-white);
+  color: var(--bg-deepblue);
 }
 
 .countries__icon {

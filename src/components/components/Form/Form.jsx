@@ -35,8 +35,11 @@ export const Form = () => {
           backgroundColor: "rgba(0, 0, 0, 0.5)"
         }}></div>
 
-      <MDBContainer fluid className="m-0 p-0 d-flex justify-content-center">
-        <form className="w-50 my-5 form-outline form-white">
+      <MDBContainer
+        fluid
+        className="m-0 p-0 d-flex justify-content-center "
+        style={{ height: "80vh" }}>
+        <form className="w-50 pt-5 mt-5 form-outline form-white">
           <MDBInput
             className="mb-4"
             type="text"

@@ -8,7 +8,7 @@ export const Countries = () => {
     <MDBContainer fluid className="countries py-5" id="geography">
       <MDBCol className="pt-3 mb-2 text-center">
         <h3 className="fw-bolder fs-2">География наших объектов</h3>
-        <p className="fw-bolder fs-4 mx-5 pt-4">
+        <p className="fw-bolder fs-4 mx-5 pt-4 text-white">
           Наши системы очистки воды успешно эксплуатируются в различных
           компаниях на территории России, Грузии и Алжира
         </p>
