@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Partners } from "./components/Partners";
 import { Areas } from "./components/Areas";
+import { Technologies } from "./components/Technologies";
 import { Countries } from "./components/Countries";
 import { Form } from "./components/Form";
 import { Questions } from "./components/Questions";
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Partners />
       <Areas />
+      <Technologies />
       <Countries />
       <Form />
       <Questions />
