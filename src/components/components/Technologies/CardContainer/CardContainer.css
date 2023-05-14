@@ -1,0 +1,16 @@
+.technologies__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies__title {
+  color: var(--bg-deepblue);
+}
+
+@media (min-width: 992px) {
+  .technologies__container {
+    flex-direction: row;
+  }
+}

@@ -9,6 +9,7 @@
   height: 100px;
   display: block;
   object-fit: cover;
+  opacity: 0.7;
 }
 
 .list__text {
