@@ -1,0 +1,9 @@
+.excarousel {
+  height: 320px;
+}
+
+@media (min-width: 768px) {
+  .excarousel {
+    height: 350px;
+  }
+}
