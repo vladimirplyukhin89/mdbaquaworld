@@ -1,1 +1,1 @@
-export * from "./Types.jsx";
+export * from "./Variants.jsx";

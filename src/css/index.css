@@ -4,4 +4,5 @@
 
 body {
   color: var(--clr-black-3);
+  background-color: var(--bg-blue);
 }

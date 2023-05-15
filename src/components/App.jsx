@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Partners } from "./components/Partners";
 import { Areas } from "./components/Areas";
-// import { Types } from "./components/Variants";
+import { Examples } from "./components/Examples";
 import { Benefits } from "./components/Benefits";
 import { Technologies } from "./components/Technologies";
 import { Countries } from "./components/Countries";
@@ -20,14 +20,15 @@ function App() {
       <Hero />
       <Partners />
       <Areas />
-      {/* <Types /> */}
+      <Examples />
+      {/* <Variants /> */}
       <Benefits />
       <Technologies />
       <Countries />
       <Form />
       <Questions />
-      <ScrollBtn />
       <Footer />
+      <ScrollBtn />
     </>
   );
 }

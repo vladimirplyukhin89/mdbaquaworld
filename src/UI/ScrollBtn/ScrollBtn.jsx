@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { MDBIcon } from "mdb-react-ui-kit";
+import { MDBIcon, MDBRipple } from "mdb-react-ui-kit";
 
 import "./ScrollBtn.css";
 
@@ -38,9 +38,11 @@ export const ScrollBtn = () => {
 
   return (
     isVisible && (
-      <div ref={scrollRef} className="wrapper" onClick={scrollToTop}>
-        <MDBIcon icon="chevron-up" className="wrapper__btn" />
-      </div>
+      <MDBRipple>
+        <div ref={scrollRef} className="wrapper" onClick={scrollToTop}>
+          <MDBIcon icon="chevron-up" className="wrapper__btn" />
+        </div>
+      </MDBRipple>
     )
   );
 };

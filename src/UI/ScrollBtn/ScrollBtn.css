@@ -12,10 +12,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
 }
 
 .wrapper:hover {
   box-shadow: 0 4px 6px var(--clr-white);
+  transform: scale(1.2);
 }
 
 .wrapper__btn {

@@ -1,6 +1,8 @@
 import React from "react";
 import { MDBContainer, MDBCol, MDBRow, MDBIcon } from "mdb-react-ui-kit";
 
+import { Layout } from "../Layout";
+
 import "./Countries.css";
 
 export const Countries = () => {
@@ -9,11 +11,13 @@ export const Countries = () => {
       <MDBRow>
         <MDBCol className="pt-3 mb-2 text-center">
           <h2 className="countries__title">География наших объектов</h2>
-          <p className="fs-4 countries__block">
-            <MDBIcon icon="globe" className="countries__block-globe" />
-            Наши системы очистки воды успешно эксплуатируются в различных
-            компаниях на территории России, Грузии и Алжира
-          </p>
+          <Layout>
+            <p className="fs-4 countries__block">
+              <MDBIcon icon="globe" className="countries__block-globe" />
+              Наши системы очистки воды успешно эксплуатируются в различных
+              компаниях на территории России, Грузии и Алжира
+            </p>
+          </Layout>
         </MDBCol>
       </MDBRow>
 

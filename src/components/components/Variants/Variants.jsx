@@ -4,9 +4,9 @@ import { MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
 import { VariantsCarousel } from "./VariantsCarousel";
 import { VariantsInfo } from "./VariantsInfo";
 
-// import "./Variants.css";
+import "./Variants.css";
 
-export const Types = () => {
+export const Variants = () => {
   return (
     <MDBContainer fluid className="variants">
       <h2 className="variants__title">Варианты исполнения</h2>

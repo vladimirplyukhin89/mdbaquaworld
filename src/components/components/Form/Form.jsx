@@ -3,6 +3,10 @@ import { MDBContainer, MDBInput, MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 
 import bgVideo from "./video/form.mp4";
 
+const handleSubmit = event => {
+  event.preventDefault();
+};
+
 export const Form = () => {
   return (
     <div className="position-relative">
@@ -39,7 +43,9 @@ export const Form = () => {
         fluid
         className="m-0 p-0 d-flex justify-content-center "
         style={{ height: "80vh" }}>
-        <form className="w-50 pt-5 mt-5 form-outline form-white">
+        <form
+          onSubmit={handleSubmit}
+          className="w-50 pt-5 mt-5 form-outline form-white">
           <MDBInput
             className="mb-4"
             type="text"
