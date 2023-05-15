@@ -1,10 +1,19 @@
 .benefits__list {
   padding-left: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: var(--bg-opacity);
+  box-shadow: 0 4px 8px var(--clr-white);
 }
 
 .benefits__icon {
-  color: var(--bg-blueline);
+  color: var(--bg-deepblue);
   margin-right: 10px;
+  z-index: 1;
+}
+
+.benefits__list:hover {
+  box-shadow: 0 4px 8px var(--clr-blueline);
 }
 
 @media (min-width: 768px) {

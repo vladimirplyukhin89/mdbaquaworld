@@ -1,0 +1,34 @@
+.wrapper {
+  margin-left: 1rem;
+}
+
+.variants-info__text {
+  color: var(--clr-black-3);
+  font-weight: 500;
+}
+
+.variants__nav {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.variants__nav-btn {
+  width: 240px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 576px) {
+  .variants__nav {
+    margin: 2rem 0;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .variants-info__wrapper {
+    margin-left: 2rem;
+  }
+}

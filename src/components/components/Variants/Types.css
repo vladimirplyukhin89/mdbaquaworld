@@ -1,0 +1,24 @@
+.variants {
+  background: var(--bg-turquoise);
+  padding-bottom: 2rem;
+}
+
+.variants__title {
+  color: var(--bg-deepblue);
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.variants__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .variants__content {
+    flex-direction: row;
+  }
+}

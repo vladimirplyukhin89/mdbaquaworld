@@ -1,0 +1,33 @@
+.wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+  background-color: var(--bg-blueline);
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper:hover {
+  box-shadow: 0 4px 6px var(--clr-white);
+}
+
+.wrapper__btn {
+  display: block;
+  object-fit: cover;
+  color: var(--clr-white);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    right: 30px;
+    width: 40px;
+    height: 40px;
+  }
+}

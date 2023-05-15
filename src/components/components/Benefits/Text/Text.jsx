@@ -4,7 +4,6 @@ import { MDBRow, MDBCol, MDBIcon } from "mdb-react-ui-kit";
 import { list } from "./data";
 
 import "./Text.css";
-
 export const Text = () => {
   return (
     <MDBRow>

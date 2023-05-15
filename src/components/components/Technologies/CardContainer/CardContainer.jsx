@@ -7,7 +7,7 @@ import "./CardContainer.css";
 export const CardContainer = ({ images, text }) => {
   return (
     <>
-      <p className="text-center mb-4 fs-4 fw-bolder technologies__title">
+      <p className="text-center mb-4 fs-4 fw-bolder cardContainer__title">
         {text}
       </p>
 
