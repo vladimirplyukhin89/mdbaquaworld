@@ -1,0 +1,26 @@
+.exinfo__subtitle {
+}
+
+.exinfo__btns {
+  margin: 1rem 0;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.exinfo__btns_left {
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+  .exinfo__btns {
+    margin: 2rem 0;
+    flex-direction: row;
+  }
+
+  .exinfo__btns_left {
+    margin-bottom: 0rem;
+    margin-right: 1rem;
+  }
+}

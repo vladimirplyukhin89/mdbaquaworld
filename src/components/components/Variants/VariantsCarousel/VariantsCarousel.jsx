@@ -1,20 +1,19 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
-import { carouselItems } from "../img";
-
 export const VariantsCarousel = () => {
   return (
-    <MDBCarousel>
-      {carouselItems.map((item, i) => (
-        <MDBCarouselItem
-          key={i}
-          className="w-75 d-block mx-auto"
-          itemId={i + 1}
-          src={item.src}
-          alt={item.alt}
-        />
-      ))}
-    </MDBCarousel>
+    <></>
+    // <MDBCarousel>
+    //   {carouselItems.map((item, i) => (
+    //     <MDBCarouselItem
+    //       key={i}
+    //       className="w-75 d-block mx-auto"
+    //       itemId={i + 1}
+    //       src={item.src}
+    //       alt={item.alt}
+    //     />
+    //   ))}
+    // </MDBCarousel>
   );
 };

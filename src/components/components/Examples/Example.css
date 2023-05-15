@@ -1,0 +1,21 @@
+.examples {
+  background: var(--bg-lightblue);
+  padding-bottom: 2rem;
+}
+
+.examples__title {
+  color: var(--bg-deepblue);
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media (min-width: 576px) {
+  .examples__blocks {
+    flex-direction: row-reverse;
+  }
+
+  .examples__frames {
+    flex-direction: row;
+  }
+}
