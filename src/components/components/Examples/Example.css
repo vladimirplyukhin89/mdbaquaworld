@@ -1,13 +1,30 @@
 .examples {
   background: var(--bg-lightblue);
   padding-bottom: 2rem;
+  color: var(--bg-deepblue);
 }
 
 .examples__title {
-  color: var(--bg-deepblue);
   font-weight: 600;
   text-align: center;
   padding: 2rem 0;
+}
+
+.examples__frames-title {
+  text-align: center;
+  font-weight: 500;
+  animation: show 0.8s ease-in-out forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 576px) {

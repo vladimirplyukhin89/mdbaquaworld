@@ -3,7 +3,7 @@ import { MDBBtn } from "mdb-react-ui-kit";
 
 import "./ExInfo.css";
 
-export const ExInfo = ({ title, text, subtext, handle }) => {
+export const ExInfo = ({ title, text, subtext, handle, show }) => {
   return (
     <>
       <h3 className="exinfo__subtitle">{title}</h3>
@@ -12,7 +12,7 @@ export const ExInfo = ({ title, text, subtext, handle }) => {
       <div className="exinfo__btns">
         <MDBBtn className="exinfo__btns_left">Оставить заявку</MDBBtn>
         <MDBBtn color="secondary" onClick={handle}>
-          Показать варианты
+          {!show ? "Показать варианты" : "Скрыть варианты"}
         </MDBBtn>
       </div>
     </>
