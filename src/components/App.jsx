@@ -21,7 +21,6 @@ function App() {
       <Partners />
       <Areas />
       <Examples />
-      {/* <Variants /> */}
       <Benefits />
       <Technologies />
       <Countries />

@@ -37,6 +37,7 @@ export const Hero = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
+        viewport={{ delay: 0.2, once: true }}
         className="mask h-100"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
         <div className="d-flex justify-content-center align-items-center h-100">
