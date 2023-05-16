@@ -41,7 +41,9 @@ export const ExInfo = ({ title, text, subtext, handle, show }) => {
         {subtext}
       </motion.p>
       <motion.div custom={4} variants={blockAnimation} className="exinfo__btns">
-        <MDBBtn className="exinfo__btns_left">Оставить заявку</MDBBtn>
+        <MDBBtn className="exinfo__btns_left" href="#form">
+          Оставить заявку
+        </MDBBtn>
         <MDBBtn color="secondary" onClick={handle}>
           {!show ? "Показать варианты" : "Скрыть варианты"}
         </MDBBtn>

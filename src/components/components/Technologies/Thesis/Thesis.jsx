@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import blob from "./img/blob.webp";
 
@@ -24,11 +25,11 @@ const blockAnimation = {
 
 export const Thesis = ({ text }) => {
   return (
-    <div
+    <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}>
-      <div
+      <motion.div
         variants={blockAnimation}
         custom={1}
         className="d-flex align-items-center justify-content-between bg-primary thesis">
@@ -41,7 +42,7 @@ export const Thesis = ({ text }) => {
           height="65px"
           className="thesis__icon"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };

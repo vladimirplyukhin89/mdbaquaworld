@@ -27,7 +27,7 @@ export const Examples = () => {
   };
 
   return (
-    <MDBContainer fluid className="examples">
+    <MDBContainer fluid className="examples" id="examples">
       <h2 className="examples__title">Варианты исполнения</h2>{" "}
       <Layout>
         <MDBRow className="examples__blocks">
@@ -63,7 +63,8 @@ export const Examples = () => {
                 ))}
                 <MDBBtn
                   className="d-flex justify-content-center mx-auto mb-5"
-                  onClick={handleClickBlocks}>
+                  onClick={handleClickBlocks}
+                  href="#examples">
                   Свернуть
                 </MDBBtn>
               </>
@@ -104,7 +105,8 @@ export const Examples = () => {
                 ))}
                 <MDBBtn
                   className="d-flex justify-content-center mx-auto"
-                  onClick={handleClickFrames}>
+                  onClick={handleClickFrames}
+                  href="#examples">
                   Свернуть
                 </MDBBtn>
               </>

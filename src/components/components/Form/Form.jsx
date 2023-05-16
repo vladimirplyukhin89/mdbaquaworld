@@ -67,6 +67,7 @@ export const Form = () => {
         className="m-0 p-0 d-flex justify-content-center "
         style={{ height: "80vh" }}>
         <motion.form
+          id="form"
           onSubmit={handleSubmit}
           className="w-50 pt-5 mt-5 form-outline form-white"
           variants={formAnimation}

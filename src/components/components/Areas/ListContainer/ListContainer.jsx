@@ -4,8 +4,7 @@ import {
   MDBCol,
   MDBCard,
   MDBCardBody,
-  MDBCardSubTitle,
-  MDBBtn
+  MDBCardSubTitle
 } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
 
@@ -31,7 +30,7 @@ const textAnimation = {
   })
 };
 
-const ListContainer = forwardRef(({ img, alt, text }, ref) => {
+const ListContainer = forwardRef(() => {
   return (
     <motion.section
       initial="hidden"
@@ -47,7 +46,9 @@ const ListContainer = forwardRef(({ img, alt, text }, ref) => {
                 <img src={item.img} alt={item.alt} className="benefits__img" />
               </div>
               <MDBCardBody className="benefits__text">
-                <MDBCardSubTitle>{item.text}</MDBCardSubTitle>
+                <MDBCardSubTitle className="benefits__subtext">
+                  {item.text}
+                </MDBCardSubTitle>
               </MDBCardBody>
               {/* <MDBBtn className="mb-3 ">Подробнее</MDBBtn> */}
             </MDBCard>

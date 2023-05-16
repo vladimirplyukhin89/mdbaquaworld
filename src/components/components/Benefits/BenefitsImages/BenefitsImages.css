@@ -28,6 +28,10 @@
   padding-bottom: 0;
 }
 
+.benefits__subtext {
+  height: auto;
+}
+
 .benefits-images:hover {
   box-shadow: 0 4px 8px var(--bg-blueline);
 }
@@ -39,4 +43,10 @@
 
 .benefits-images:hover .benefits__text {
   color: var(--bg-deepblue);
+}
+
+@media (min-width: 992px) {
+  .benefits__subtext {
+    height: 105px;
+  }
 }
