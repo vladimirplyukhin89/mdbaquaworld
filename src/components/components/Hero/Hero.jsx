@@ -45,14 +45,14 @@ export const Hero = () => {
             <motion.h1 custom={1} variants={textAnimation} className="mb-4">
               Высокопроизводительные системы очистки воды
             </motion.h1>
-            <motion.h4 custom={2} variants={textAnimation} className="mb-5">
+            <motion.h5 custom={2} variants={textAnimation} className="mb-5">
               Очищаем воду для решения любых Ваших задач и производственных
               целей.
               <br /> Экономим Ваши ресурсы, делая автоматизированные системы
               очистки воды доступными.
-            </motion.h4>
+            </motion.h5>
 
-            <motion.div custom={3} variants={textAnimation}>
+            <motion.div custom={2} variants={textAnimation}>
               <MDBRipple>
                 <MDBBtn className="btn btn-lg" href="#form" role="button">
                   Оставить заявку

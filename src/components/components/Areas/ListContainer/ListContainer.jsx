@@ -36,7 +36,7 @@ const ListContainer = forwardRef(({ img, alt, text }, ref) => {
     <motion.section
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.3, once: true }}
+      viewport={{ amount: 0.2, once: true }}
       custom={1}
       variants={textAnimation}>
       <MDBRow className="mt-5">
@@ -49,7 +49,7 @@ const ListContainer = forwardRef(({ img, alt, text }, ref) => {
               <MDBCardBody className="benefits__text">
                 <MDBCardSubTitle>{item.text}</MDBCardSubTitle>
               </MDBCardBody>
-              <MDBBtn className="mb-3 ">Подробнее</MDBBtn>
+              {/* <MDBBtn className="mb-3 ">Подробнее</MDBBtn> */}
             </MDBCard>
           </MDBCol>
         ))}

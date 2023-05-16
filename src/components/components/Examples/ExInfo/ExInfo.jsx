@@ -27,7 +27,7 @@ export const ExInfo = ({ title, text, subtext, handle, show }) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2 }}>
+      viewport={{ amount: 0.2, once: true }}>
       <motion.h3
         custom={1}
         variants={blockAnimation}

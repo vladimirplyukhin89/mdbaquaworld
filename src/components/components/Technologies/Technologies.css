@@ -5,7 +5,7 @@
 
 .technology__title {
   color: var(--bg-deepblue);
-  background-color: var(--clr-white);
+  /* background-color: var(--clr-white); */
   font-weight: 600;
   text-align: center;
   margin: 2rem 0;
@@ -13,7 +13,7 @@
 
 .technology__subtitle {
   color: var(--bg-deepblue);
-  background-color: var(--clr-white);
+  /* background-color: var(--clr-white); */
   text-align: center;
   line-height: 1.7rem;
   padding-bottom: 2rem;
