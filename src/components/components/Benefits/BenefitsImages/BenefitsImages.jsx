@@ -49,7 +49,9 @@ export const BenefitsImages = () => {
                   />
                 </div>
                 <MDBCardBody className="benefits__text">
-                  <MDBCardSubTitle>{item.text}</MDBCardSubTitle>
+                  <MDBCardSubTitle className="benefits__subtext">
+                    {item.text}
+                  </MDBCardSubTitle>
                 </MDBCardBody>
                 {/* <MDBBtn className="mb-3 ">Подробнее</MDBBtn> */}
               </MDBCard>

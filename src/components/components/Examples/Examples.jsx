@@ -9,8 +9,6 @@ import { ExBlocks } from "./ExBlocks";
 
 import { examplesFrames } from "./data";
 import { examplesBlocks } from "./data";
-// import { carouselBlocks } from "./img";
-// import { carouselFrames } from "./img";
 
 import block1 from "../../../img/typesBlock-1.webp";
 import block2 from "../../../img/typesBlock-2.webp";

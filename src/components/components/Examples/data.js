@@ -1,3 +1,11 @@
+import block1 from "../../../img/typesBlock-1.webp";
+import block2 from "../../../img/typesBlock-2.webp";
+import block3 from "../../../img/typesBlock-3.webp";
+import block4 from "../../../img/typesBlock-4.webp";
+import frame2 from "../../../img/typesBlock-2.webp";
+import frame3 from "../../../img/typesBlock-3.webp";
+import frame4 from "../../../img/typesBlock-4.webp";
+
 export const examplesFrames = [
   {
     title:
@@ -10,7 +18,7 @@ export const examplesFrames = [
       { text: "Умягчение воды на базе ионообменных смол", icon: "check" },
       { text: "УФ-стерилизация", icon: "check" }
     ],
-    image: "img/frames/typesFrame-2.webp"
+    image: frame2
   },
   {
     title: "Cтанция основана на 4-х ступенчатой системе очистки воды",
@@ -20,7 +28,7 @@ export const examplesFrames = [
       { text: "Обезжелезивание/Деманганация", icon: "check" },
       { text: "УФ-стерилизация", icon: "check" }
     ],
-    image: "img/frames/typesFrame-3.webp"
+    image: frame3
   },
   {
     title: "Cтанция основана на 2-х ступенчатой системе очистки воды",
@@ -28,7 +36,7 @@ export const examplesFrames = [
       { text: "Дисковая фильтрация", icon: "check" },
       { text: "Умягчение воды на базе ионообменных смол", icon: "check" }
     ],
-    image: "img/frames/typesFrame-4.webp"
+    image: frame4
   }
 ];
 
@@ -43,7 +51,7 @@ export const examplesBlocks = [
       { text: "Умягчение воды на базе ионообменных смол", icon: "check" },
       { text: "УФ-стерилизация", icon: "check" }
     ],
-    image: "img/frames/typesBlock-1.webp"
+    image: block1
   },
   {
     title:
@@ -54,7 +62,7 @@ export const examplesBlocks = [
       { text: "Обезжелезивание/Деманганация", icon: "check" },
       { text: "УФ-стерилизация", icon: "check" }
     ],
-    image: "img/frames/typesBlock-2.webp"
+    image: block2
   },
   {
     title:
@@ -63,7 +71,7 @@ export const examplesBlocks = [
       { text: "Дисковая фильтрация", icon: "check" },
       { text: "Система обратного осмоса", icon: "check" }
     ],
-    image: "img/frames/typesBlock-3.webp"
+    image: block3
   },
   {
     title:
@@ -72,6 +80,6 @@ export const examplesBlocks = [
       { text: "Дисковая фильтрация", icon: "check" },
       { text: "Умягчение воды на базе ионообменных смол", icon: "check" }
     ],
-    image: "img/frames/typesBlock-4.webp"
+    image: block4
   }
 ];

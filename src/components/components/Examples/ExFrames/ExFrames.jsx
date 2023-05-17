@@ -6,7 +6,7 @@ import "./ExFrames.css";
 export const ExFrames = ({ example }) => {
   return (
     <MDBContainer className="frames">
-      <MDBRow>
+      <MDBRow className="frames__direction">
         <MDBCol md={6} lg={6}>
           <div className="frames__list">
             <h4 className="frames__subtitle">{example.title}</h4>
@@ -19,7 +19,7 @@ export const ExFrames = ({ example }) => {
           </div>
         </MDBCol>
         <MDBCol md={6} lg={6}>
-          {example.image}
+          <img src={example.image} alt={example.title} className="w-100" />
         </MDBCol>
       </MDBRow>
     </MDBContainer>

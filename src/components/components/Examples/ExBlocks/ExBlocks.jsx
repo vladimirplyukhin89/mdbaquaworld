@@ -19,7 +19,7 @@ export const ExBlocks = ({ example }) => {
           </div>
         </MDBCol>
         <MDBCol md={6} lg={6}>
-          {example.image}
+          <img src={example.image} alt={example.title} className="w-100" />
         </MDBCol>
       </MDBRow>
     </MDBContainer>

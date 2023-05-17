@@ -52,3 +52,9 @@
     transform: translateY(0);
   }
 }
+
+@media (min-width: 768px) {
+  .frames__direction {
+    margin-bottom: 2rem;
+  }
+}

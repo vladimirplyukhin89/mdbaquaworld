@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import { list } from "./data";
 
+import "./Text.css";
+
 const textAnimation = {
   hidden: {
     y: -50,
@@ -22,7 +24,6 @@ const textAnimation = {
   })
 };
 
-import "./Text.css";
 export const Text = () => {
   return (
     <motion.div
