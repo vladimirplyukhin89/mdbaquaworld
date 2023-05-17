@@ -61,12 +61,11 @@ export const Examples = () => {
                     example={example}
                   />
                 ))}
-                <MDBBtn
-                  className="d-flex justify-content-center mx-auto mb-5"
-                  onClick={handleClickBlocks}
-                  href="#examples">
-                  Свернуть
-                </MDBBtn>
+                <div className="mb-5 examples__button">
+                  <MDBBtn onClick={handleClickBlocks} href="#examples">
+                    Свернуть
+                  </MDBBtn>
+                </div>
               </>
             )}
           </MDBCol>
@@ -103,12 +102,11 @@ export const Examples = () => {
                     example={example}
                   />
                 ))}
-                <MDBBtn
-                  className="d-flex justify-content-center mx-auto"
-                  onClick={handleClickFrames}
-                  href="#examples">
-                  Свернуть
-                </MDBBtn>
+                <div className="examples__button">
+                  <MDBBtn onClick={handleClickFrames} href="#examples">
+                    Свернуть
+                  </MDBBtn>
+                </div>
               </>
             )}
           </MDBCol>

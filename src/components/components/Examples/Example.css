@@ -16,6 +16,11 @@
   animation: show 0.8s ease-in-out forwards;
 }
 
+.examples__button {
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes show {
   0% {
     opacity: 0;

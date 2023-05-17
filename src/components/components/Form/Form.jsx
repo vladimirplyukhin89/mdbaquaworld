@@ -1,6 +1,5 @@
 import React from "react";
 import { MDBContainer, MDBInput, MDBBtn, MDBRipple } from "mdb-react-ui-kit";
-import { motion } from "framer-motion";
 
 import bgVideo from "./video/form.mp4";
 
@@ -8,31 +7,9 @@ const handleSubmit = event => {
   event.preventDefault();
 };
 
-const formAnimation = {
-  hidden: {
-    y: -50,
-    opacity: 0,
-    transition: {
-      duration: 1
-    }
-  },
-  visible: custom => ({
-    y: 0,
-    opacity: 1,
-    transition: {
-      delay: custom * 0.2,
-      duration: 1
-    }
-  })
-};
-
 export const Form = () => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ amount: 0.2, once: true }}
-      className="position-relative">
+    <div className="position-relative">
       <video
         style={{
           position: "absolute",
@@ -66,12 +43,10 @@ export const Form = () => {
         fluid
         className="m-0 p-0 d-flex justify-content-center "
         style={{ height: "80vh" }}>
-        <motion.form
+        <form
           id="form"
           onSubmit={handleSubmit}
-          className="w-50 pt-5 mt-5 form-outline form-white"
-          variants={formAnimation}
-          custom={1}>
+          className="w-50 pt-5 mt-5 form-outline form-white">
           <MDBInput
             className="mb-4"
             type="text"
@@ -118,8 +93,8 @@ export const Form = () => {
               </MDBBtn>
             </MDBRipple>
           </div>
-        </motion.form>
+        </form>
       </MDBContainer>
-    </motion.div>
+    </div>
   );
 };

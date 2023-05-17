@@ -35,12 +35,9 @@ export const Areas = () => {
         className="area">
         <MDBRow className="mx-auto">
           <MDBCol>
-            <motion.h2
-              custom={1}
-              variants={textAnimation}
-              className="area__title">
+            <h2 className="area__title">
               Области применения систем очистки воды
-            </motion.h2>
+            </h2>
             <Layout>
               <motion.p
                 custom={2}

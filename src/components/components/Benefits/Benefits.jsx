@@ -35,9 +35,9 @@ export const Benefits = () => {
         viewport={{ amount: 0.2, once: true }}
         className="benefits">
         <Layout>
-          <motion.h2 variants={textAnimation} className="benefits__title">
+          <h2 variants={textAnimation} className="benefits__title">
             Преимущества наших станций
-          </motion.h2>
+          </h2>
           <Text />
         </Layout>
         <BenefitsImages />

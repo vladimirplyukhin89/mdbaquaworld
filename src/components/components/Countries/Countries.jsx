@@ -33,12 +33,7 @@ export const Countries = () => {
       <MDBContainer fluid className="countries py-5" id="geography">
         <MDBRow>
           <MDBCol className="pt-3 mb-2 text-center">
-            <motion.h2
-              variants={textAnimation}
-              custom={1}
-              className="countries__title">
-              География наших объектов
-            </motion.h2>
+            <h2 className="countries__title">География наших объектов</h2>
             <Layout>
               <motion.p
                 variants={textAnimation}

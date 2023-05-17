@@ -7,14 +7,14 @@ import "./Thesis.css";
 
 const blockAnimation = {
   hidden: {
-    y: -50,
+    x: -50,
     opacity: 0,
     transition: {
       duration: 1
     }
   },
   visible: custom => ({
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       delay: custom * 0.2,

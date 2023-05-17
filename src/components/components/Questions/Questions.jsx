@@ -37,12 +37,7 @@ export const Questions = () => {
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}>
       <MDBContainer fluid className="questions">
-        <motion.h3
-          variants={textAnimation}
-          custom={1}
-          className="pt-5 fw-bolder text-center">
-          Часто задаваемые вопросы
-        </motion.h3>
+        <h3 className="pt-5 fw-bolder text-center">Часто задаваемые вопросы</h3>
         <motion.div variants={textAnimation} custom={2}>
           <MDBAccordion
             flush

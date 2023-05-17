@@ -34,12 +34,9 @@ export const Technologies = () => {
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}>
       <MDBContainer fluid className="px-0 technology">
-        <motion.h2
-          variants={textAnimation}
-          custom={1}
-          className="text-center fw-bolder py-5 pb-3 my-0 technology__title">
+        <h2 className="text-center fw-bolder py-5 pb-3 my-0 technology__title">
           Применяемые технологии
-        </motion.h2>
+        </h2>
         <motion.h3
           variants={textAnimation}
           custom={2}
