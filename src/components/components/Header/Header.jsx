@@ -15,7 +15,7 @@ import {
   MDBDropdownItem
 } from "mdb-react-ui-kit";
 
-import logo from "./img/blob.webp";
+import logo from "./img/logo.webp";
 import "./Header.css";
 
 export const Header = () => {
@@ -26,7 +26,7 @@ export const Header = () => {
       <MDBNavbar expand="lg" light bgColor="white">
         <MDBContainer fluid>
           <MDBNavbarBrand href="#">
-            <img src={logo} width={30} height={30} alt="Logo" loading="lazy" />
+            <img src={logo} alt="Logo" width={120} loading="lazy" />
           </MDBNavbarBrand>
 
           <MDBNavbarToggler
