@@ -34,7 +34,8 @@ export const Technologies = () => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2, once: true }}>
+      viewport={{ amount: 0.2, once: true }}
+      id="technologies">
       <MDBContainer fluid className="px-0 technology">
         <h2 className="text-center fw-bolder py-5 pb-3 my-0 technology__title">
           Применяемые технологии

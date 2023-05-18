@@ -47,14 +47,14 @@ export const Header = () => {
               <MDBNavbarItem>
                 <MDBNavbarLink
                   active
-                  href="#technology"
+                  href="#technologies"
                   className="mx-3 header__link">
                   Технологии
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink href="#types" className="mx-3 header__link">
+                <MDBNavbarLink href="#examples" className="mx-3 header__link">
                   Конструкции
                 </MDBNavbarLink>
               </MDBNavbarItem>
