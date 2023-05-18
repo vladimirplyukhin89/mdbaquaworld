@@ -7,13 +7,13 @@ export const ExCarousel = ({ images }) => {
   return (
     <MDBCarousel>
       <div>
-        {images.map((item, i) => (
+        {images.map(({ src, alt }, i) => (
           <MDBCarouselItem
             key={i}
             className="w-100 d-block mx-auto excarousel"
             itemId={i + 1}
-            src={item.src}
-            alt={item.alt}
+            src={src}
+            alt={alt}
           />
         ))}
       </div>

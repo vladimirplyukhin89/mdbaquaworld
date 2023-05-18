@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .form {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
