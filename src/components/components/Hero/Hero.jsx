@@ -2,7 +2,8 @@ import React from "react";
 import { MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
 
-import bgVideo from "./video/hero.mp4";
+import videoWebm from "./video/hero.webm";
+import videoMp4 from "./video/hero.mp4";
 
 const textAnimation = {
   hidden: {
@@ -31,7 +32,8 @@ export const Hero = () => {
         autoPlay
         muted
         loop>
-        <source className="h-100" src={bgVideo} type="video/mp4" />
+        <source className="h-100" src={videoWebm} type="video/webm" />
+        <source className="h-100" src={videoMp4} type="video/mp4" />
       </video>
 
       <motion.div

@@ -1,7 +1,8 @@
 import React from "react";
 import { MDBContainer, MDBInput, MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 
-import bgVideo from "./video/form.mp4";
+import videoWebm from "./video/form.webm";
+import videoMp4 from "./video/form.mp4";
 
 import "./Form.css";
 
@@ -27,7 +28,8 @@ export const Form = () => {
         autoPlay
         muted
         loop>
-        <source src={bgVideo} type="video/mp4" />
+        <source src={videoWebm} type="video/webm" />
+        <source src={videoMp4} type="video/mp4" />
       </video>
       <div
         style={{
