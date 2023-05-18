@@ -10,14 +10,14 @@ import { ExBlocks } from "./ExBlocks";
 import { examplesFrames } from "./data";
 import { examplesBlocks } from "./data";
 
-import block1 from "../../../img/typesBlock-1.webp";
-import block2 from "../../../img/typesBlock-2.webp";
-import block3 from "../../../img/typesBlock-3.webp";
-import block4 from "../../../img/typesBlock-4.webp";
-import frame1 from "../../../img/typesFrame-1.webp";
-import frame2 from "../../../img/typesBlock-2.webp";
-import frame3 from "../../../img/typesBlock-3.webp";
-import frame4 from "../../../img/typesBlock-4.webp";
+import block1 from "../../../img/types/typesBlock-1.webp";
+import block2 from "../../../img/types/typesBlock-2.webp";
+import block3 from "../../../img/types/typesBlock-3.webp";
+import block4 from "../../../img/types/typesBlock-4.webp";
+import frame1 from "../../../img/types/typesFrame-1.webp";
+import frame2 from "../../../img/types/typesBlock-2.webp";
+import frame3 from "../../../img/types/typesBlock-3.webp";
+import frame4 from "../../../img/types/typesBlock-4.webp";
 
 const carouselBlocks = [
   { src: block1, alt: "block1" },
@@ -53,7 +53,7 @@ export const Examples = () => {
       <Layout>
         <MDBRow className="examples__blocks">
           <MDBCol sm={12} md={6}>
-            <ExCarousel images={carouselBlocks} />
+            {/* <ExCarousel images={carouselBlocks} /> */}
           </MDBCol>
           <MDBCol sm={12} md={6}>
             <ExInfo
@@ -94,7 +94,7 @@ export const Examples = () => {
 
         <MDBRow className="examples__frames">
           <MDBCol sm={12} md={6}>
-            <ExCarousel images={carouselFrames} />
+            {/* <ExCarousel images={carouselFrames} /> */}
           </MDBCol>
           <MDBCol sm={12} md={6}>
             <ExInfo

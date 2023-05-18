@@ -1,13 +1,12 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
-import { motion } from "framer-motion";
 
 import "./ExCarousel.css";
 
 export const ExCarousel = ({ images }) => {
   return (
     <MDBCarousel>
-      <motion.div>
+      <div>
         {images.map((item, i) => (
           <MDBCarouselItem
             key={i}
@@ -17,7 +16,7 @@ export const ExCarousel = ({ images }) => {
             alt={item.alt}
           />
         ))}
-      </motion.div>
+      </div>
     </MDBCarousel>
   );
 };

@@ -7,7 +7,7 @@ export const ExBlocks = ({ example }) => {
   return (
     <MDBContainer className="blocks">
       <MDBRow className="blocks__direction">
-        <MDBCol md={6} lg={6}>
+        <MDBCol md={6} lg={6} className="blocks__wrapper">
           <div className="blocks__list">
             <h4 className="blocks__subtitle">{example.title}</h4>
             {example.steps.map((step, i) => (

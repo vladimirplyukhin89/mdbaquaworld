@@ -7,7 +7,7 @@ export const ExFrames = ({ example }) => {
   return (
     <MDBContainer className="frames">
       <MDBRow className="frames__direction">
-        <MDBCol md={6} lg={6}>
+        <MDBCol md={6} lg={6} className="frames__wrapper">
           <div className="frames__list">
             <h4 className="frames__subtitle">{example.title}</h4>
             {example.steps.map((step, i) => (

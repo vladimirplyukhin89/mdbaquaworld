@@ -1,10 +1,11 @@
-import block1 from "../../../img/typesBlock-1.webp";
-import block2 from "../../../img/typesBlock-2.webp";
-import block3 from "../../../img/typesBlock-3.webp";
-import block4 from "../../../img/typesBlock-4.webp";
-import frame2 from "../../../img/typesBlock-2.webp";
-import frame3 from "../../../img/typesBlock-3.webp";
-import frame4 from "../../../img/typesBlock-4.webp";
+import block1 from "../../../img/types/typesBlock-1.webp";
+import block2 from "../../../img/types/typesBlock-2.webp";
+import block3 from "../../../img/types/typesBlock-3.webp";
+import block4 from "../../../img/types/typesBlock-4.webp";
+import frame1 from "../../../img/types/typesBlock-1.webp";
+import frame2 from "../../../img/types/typesBlock-2.webp";
+import frame3 from "../../../img/types/typesBlock-3.webp";
+import frame4 from "../../../img/types/typesBlock-4.webp";
 
 export const examplesFrames = [
   {

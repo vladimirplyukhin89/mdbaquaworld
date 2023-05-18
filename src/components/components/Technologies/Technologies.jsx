@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 
 import { CardContainer } from "./CardContainer/CardContainer";
 import { Thesis } from "./Thesis/Thesis";
-import { imagesFreshWater } from "./CardContainer/img";
-import { imagesSeaWater } from "./CardContainer/img";
+import { imagesFreshWater } from "../../../img/technologies/index";
+import { imagesSeaWater } from "../../../img/technologies/index";
+
+import dirtyWater from "../../../img/technologies/tech-0.webp";
 
 import "./Technologies.css";
 
@@ -43,6 +45,7 @@ export const Technologies = () => {
           className="text-center fw-bolder technology__subtitle">
           Стандартная технологическая схема модульных систем водоподготовки
         </motion.h3>
+
         <MDBRow>
           <MDBCol>
             <CardContainer text="Пресная вода" images={imagesFreshWater} />
