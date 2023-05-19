@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBContainer, MDBCol, MDBRow, MDBIcon } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { Layout } from "../Layout";
 
@@ -25,6 +26,8 @@ const textAnimation = {
 };
 
 export const Countries = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial="hidden"
@@ -33,15 +36,14 @@ export const Countries = () => {
       <MDBContainer fluid className="countries py-5" id="geography">
         <MDBRow>
           <MDBCol className="pt-3 mb-2 text-center">
-            <h2 className="countries__title">География наших объектов</h2>
+            <h2 className="countries__title">{t("geography_title")}</h2>
             <Layout>
               <motion.p
                 variants={textAnimation}
                 custom={2}
                 className="fs-4 countries__block">
                 <MDBIcon icon="globe" className="countries__block-globe" />
-                Наши системы очистки воды успешно эксплуатируются в различных
-                компаниях на территории России, Грузии и Алжира
+                {t("geography_subtitle")}
               </motion.p>
             </Layout>
           </MDBCol>
@@ -51,17 +53,17 @@ export const Countries = () => {
           <MDBRow className=" d-flex justify-content-around align-items-center countries__cards">
             <MDBCol md="4" className="mx-2 my-4 countries__drop">
               <div className="countries__icon countries__icon-1"></div>
-              <p className="text-center pt-5 fw-bolder fs-5">Россия</p>
+              <p className="text-center pt-5 fw-bolder fs-5">{t("russia")}</p>
             </MDBCol>
 
             <MDBCol md="4" className="mx-2 my-4 countries__drop">
               <div className="countries__icon countries__icon-2"></div>
-              <p className="text-center pt-5 fw-bolder fs-5">Алжир</p>
+              <p className="text-center pt-5 fw-bolder fs-5">{t("algeria")}</p>
             </MDBCol>
 
             <MDBCol md="4" className="mx-2 my-4 countries__drop">
               <div className="countries__icon countries__icon-3"></div>
-              <p className="text-center pt-5 fw-bolder fs-5">Грузия</p>
+              <p className="text-center pt-5 fw-bolder fs-5">{t("georgia")}</p>
             </MDBCol>
           </MDBRow>
         </motion.div>

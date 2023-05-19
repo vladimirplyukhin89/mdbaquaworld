@@ -53,7 +53,6 @@ const ListContainer = forwardRef(() => {
                   {t(text)}
                 </MDBCardSubTitle>
               </MDBCardBody>
-              {/* <MDBBtn className="mb-3 ">Подробнее</MDBBtn> */}
             </MDBCard>
           </MDBCol>
         ))}

@@ -9,33 +9,32 @@ import frame4 from "../../../img/types/typesBlock-4.webp";
 
 export const examplesFrames = [
   {
-    title:
-      "Cтанция рамно-модульная станция водоподготовки основана на 6-ти ступенчатой системе очистки воды",
+    title: "examples_frames_title",
     steps: [
-      { text: "Механическая фильтрация", icon: "check" },
-      { text: "Напорная аэрация", icon: "check" },
-      { text: "Обезжелезивание/Деманганация", icon: "check" },
-      { text: "Сорбция", icon: "check" },
-      { text: "Умягчение воды на базе ионообменных смол", icon: "check" },
-      { text: "УФ-стерилизация", icon: "check" }
+      { text: "example_frames_text", icon: "check" },
+      { text: "example_frames_text_2", icon: "check" },
+      { text: "example_frames_text_3", icon: "check" },
+      { text: "example_frames_text_4", icon: "check" },
+      { text: "example_frames_text_5", icon: "check" },
+      { text: "example_frames_text_6", icon: "check" }
     ],
     image: frame2
   },
   {
-    title: "Cтанция основана на 4-х ступенчатой системе очистки воды",
+    title: "examples_frames_title_2",
     steps: [
-      { text: "Механическая фильтрация", icon: "check" },
-      { text: "Напорная аэрация", icon: "check" },
-      { text: "Обезжелезивание/Деманганация", icon: "check" },
-      { text: "УФ-стерилизация", icon: "check" }
+      { text: "example_frames_text", icon: "check" },
+      { text: "example_frames_text_2", icon: "check" },
+      { text: "example_frames_text_3", icon: "check" },
+      { text: "example_frames_text_6", icon: "check" }
     ],
     image: frame3
   },
   {
-    title: "Cтанция основана на 2-х ступенчатой системе очистки воды",
+    title: "examples_frames_title_3",
     steps: [
-      { text: "Дисковая фильтрация", icon: "check" },
-      { text: "Умягчение воды на базе ионообменных смол", icon: "check" }
+      { text: "example_frames_text_7", icon: "check" },
+      { text: "example_frames_text_4", icon: "check" }
     ],
     image: frame4
   }
@@ -43,43 +42,40 @@ export const examplesFrames = [
 
 export const examplesBlocks = [
   {
-    title: "Станция основана на 6-ти ступенчатой системе очистки воды",
+    title: "examples_frames_title",
     steps: [
-      { text: "Механическая фильтрация", icon: "check" },
-      { text: "Напорная аэрация", icon: "check" },
-      { text: "Обезжелезивание/Деманганация", icon: "check" },
-      { text: "Сорбция", icon: "check" },
-      { text: "Умягчение воды на базе ионообменных смол", icon: "check" },
-      { text: "УФ-стерилизация", icon: "check" }
+      { text: "example_frames_text", icon: "check" },
+      { text: "example_frames_text_2", icon: "check" },
+      { text: "example_frames_text_3", icon: "check" },
+      { text: "example_frames_text_4", icon: "check" },
+      { text: "example_frames_text_4", icon: "check" },
+      { text: "example_frames_text_6", icon: "check" }
     ],
     image: block1
   },
   {
-    title:
-      "Cтанция водоподготовки основана на 4-х ступенчатой системе очистки воды",
+    title: "examples_frames_title_2",
     steps: [
-      { text: "Механическая фильтрация", icon: "check" },
-      { text: "Напорная аэрация", icon: "check" },
-      { text: "Обезжелезивание/Деманганация", icon: "check" },
-      { text: "УФ-стерилизация", icon: "check" }
+      { text: "example_frames_text", icon: "check" },
+      { text: "example_frames_text_2", icon: "check" },
+      { text: "example_frames_text_3", icon: "check" },
+      { text: "example_frames_text_6", icon: "check" }
     ],
     image: block2
   },
   {
-    title:
-      "Cтанция водоподготовки основана на 2-ух ступенчатой системе очистки воды",
+    title: "examples_frames_title_3",
     steps: [
-      { text: "Дисковая фильтрация", icon: "check" },
-      { text: "Система обратного осмоса", icon: "check" }
+      { text: "example_frames_text_4", icon: "check" },
+      { text: "example_frames_text_8", icon: "check" }
     ],
     image: block3
   },
   {
-    title:
-      "Cтанция водоподготовки основана на 2-ух ступенчатой системе очистки воды",
+    title: "examples_frames_title_3",
     steps: [
-      { text: "Дисковая фильтрация", icon: "check" },
-      { text: "Умягчение воды на базе ионообменных смол", icon: "check" }
+      { text: "example_frames_text_4", icon: "check" },
+      { text: "example_frames_text_4", icon: "check" }
     ],
     image: block4
   }

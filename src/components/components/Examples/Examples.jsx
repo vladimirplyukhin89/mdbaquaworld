@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MDBContainer, MDBCol, MDBRow, MDBBtn } from "mdb-react-ui-kit";
+import { useTranslation } from "react-i18next";
 
 import { Layout } from "../Layout";
 import { ExCarousel } from "./ExCarousel";
@@ -38,6 +39,7 @@ import "./Example.css";
 export const Examples = () => {
   const [showBlock, setShowBlock] = useState(false);
   const [showFrames, setShowFrames] = useState(false);
+  const { t } = useTranslation();
 
   const handleClickBlocks = () => {
     setShowBlock(prev => !prev);
@@ -49,19 +51,17 @@ export const Examples = () => {
 
   return (
     <MDBContainer fluid className="examples" id="examples">
-      <h2 className="examples__title">Варианты исполнения</h2>{" "}
+      <h2 className="examples__title">{t("examples_title")}</h2>{" "}
       <Layout>
         <MDBRow className="examples__blocks">
           <MDBCol sm={12} md={6}>
-            <ExCarousel images={carouselBlocks} />
+            {/* <ExCarousel images={carouselBlocks} /> */}
           </MDBCol>
           <MDBCol sm={12} md={6}>
             <ExInfo
-              title="Блочные системы"
-              text="Наш многолетний опыт и применяемые технологии позволяют эффективно
-        решать задачи водоподготовки любой сложности."
-              subtext="Наш инженерный состав, учитывая все тонкости и особенности, подберет
-        вариант исполнения, подходящий именно вашей компании."
+              title={t("blocks_title")}
+              text={t("blocks_text")}
+              subtext={t("blocks_subtext")}
               handle={handleClickBlocks}
               show={showBlock}
             />
@@ -73,7 +73,7 @@ export const Examples = () => {
             {showBlock && (
               <>
                 <h2 className="mt-3 mb-5 examples__frames-title">
-                  Блочные системы
+                  {t("blocks_title")}
                 </h2>
                 {examplesBlocks.map((example, i) => (
                   <ExBlocks
@@ -84,7 +84,7 @@ export const Examples = () => {
                 ))}
                 <div className="mb-5 examples__button">
                   <MDBBtn onClick={handleClickBlocks} href="#examples">
-                    Свернуть
+                    {t("options_close")}
                   </MDBBtn>
                 </div>
               </>
@@ -94,16 +94,13 @@ export const Examples = () => {
 
         <MDBRow className="examples__frames">
           <MDBCol sm={12} md={6}>
-            <ExCarousel images={carouselFrames} />
+            {/* <ExCarousel images={carouselFrames} /> */}
           </MDBCol>
           <MDBCol sm={12} md={6}>
             <ExInfo
-              title="Рамно-модульные системы"
-              text="Данный вариант предназначен для установки в существующем
-											или проектируемом помещении."
-              subtext="Станция поставляется в полной заводской готовности
-											и требует минимального времени монтажных и пусконаладочных
-											работ на месте эксплуатации."
+              title={t("frames_title")}
+              text={t("frames_text")}
+              subtext={t("frames_subtext")}
               handle={handleClickFrames}
               show={showFrames}
             />
@@ -114,7 +111,7 @@ export const Examples = () => {
             {showFrames && (
               <>
                 <h2 className="mt-3 mb-5 examples__frames-title">
-                  Рамно-модульные системы
+                  {t("frames_title")}
                 </h2>
                 {examplesFrames.map((example, i) => (
                   <ExFrames
@@ -125,7 +122,7 @@ export const Examples = () => {
                 ))}
                 <div className="examples__button">
                   <MDBBtn onClick={handleClickFrames} href="#examples">
-                    Свернуть
+                    {t("options_close")}
                   </MDBBtn>
                 </div>
               </>

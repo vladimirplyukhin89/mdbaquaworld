@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBBtn } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "./ExInfo.css";
 
@@ -23,6 +24,8 @@ const blockAnimation = {
 };
 
 export const ExInfo = ({ title, text, subtext, handle, show }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial="hidden"
@@ -42,10 +45,10 @@ export const ExInfo = ({ title, text, subtext, handle, show }) => {
       </motion.p>
       <motion.div custom={4} variants={blockAnimation} className="exinfo__btns">
         <MDBBtn className="exinfo__btns_left" href="#form">
-          Оставить заявку
+          {t("request")}
         </MDBBtn>
         <MDBBtn color="secondary" onClick={handle}>
-          {!show ? "Показать варианты" : "Скрыть варианты"}
+          {!show ? t("options_open") : t("options_close")}
         </MDBBtn>
       </motion.div>
     </motion.div>
