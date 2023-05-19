@@ -81,15 +81,15 @@ export const Header = () => {
 
             <MDBDropdown>
               <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                Язык
+                {t("lg")}
               </MDBDropdownToggle>
               <MDBDropdownMenu>
                 <MDBDropdownItem link onClick={() => changeLanguage("en")}>
-                  Английский
+                  {t("en")}
                 </MDBDropdownItem>
-                <MDBDropdownItem link>Французский</MDBDropdownItem>
+                <MDBDropdownItem link> {t("fr")}</MDBDropdownItem>
                 <MDBDropdownItem link onClick={() => changeLanguage("ru")}>
-                  Русский
+                  {t("ru")}
                 </MDBDropdownItem>
               </MDBDropdownMenu>
             </MDBDropdown>

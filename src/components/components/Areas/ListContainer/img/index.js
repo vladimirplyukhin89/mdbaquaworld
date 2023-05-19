@@ -14,7 +14,7 @@ export const images = [
     alt: "apartment"
   },
   {
-    text: "ares_house",
+    text: "areas_house",
     img: house,
     alt: "house"
   },

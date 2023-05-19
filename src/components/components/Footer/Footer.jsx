@@ -6,35 +6,40 @@ import {
   MDBCol,
   MDBIcon
 } from "mdb-react-ui-kit";
+import { useTranslation } from "react-i18next";
 
 import "./Footer.css";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <MDBFooter className="text-center text-lg-start text-muted" id="footer">
       <MDBContainer fluid className="mt-5">
         <MDBRow className="pt-3 d-flex justify-content-center">
           <MDBCol md="4" lg="3" xl="3" className="px-2 mb-4 footer__links">
-            <h6 className="text-uppercase fw-bold mb-4">Карта сайта</h6>
+            <h6 className="text-uppercase fw-bold mb-4">{t("sitemap")}</h6>
             <p className="footer__links">
               <a href="#technology" className="footer__links-link">
-                Технологии
+                {t("technology")}
               </a>
             </p>
             <p className="footer__links">
               <a href="#types" className="footer__links-link">
-                Вариант конструкций
+                {t("design")}
               </a>
             </p>
             <p className="footer__links">
               <a href="#geography" className="footer__links-link">
-                География
+                {t("geography")}
               </a>
             </p>
           </MDBCol>
 
           <MDBCol md="4" lg="3" xl="3" className="px-2 mb-4 footer__links">
-            <h6 className="text-uppercase fw-bold mb-4">Контакты</h6>
+            <h6 className="text-uppercase fw-bold mb-4">
+              {t("contact_footer")}
+            </h6>
             <p className="footer__links">
               <a
                 href="mailto:info@aquaworld63.ru"
@@ -68,7 +73,7 @@ export const Footer = () => {
 
           <MDBCol md="4" lg="2" xl="2" className="px-2 mb-4 footer__links">
             <h6 className="text-uppercase fw-bold mb-4 text-sm-left text-md-center">
-              Мы в соцсетях:
+              {t("social_networks")}
             </h6>
             <div className="d-flex justify-content-center align-items-center">
               <a
@@ -113,10 +118,10 @@ export const Footer = () => {
 
       <MDBContainer fluid className="footer__rights">
         <div className="text-center p-4">
-          © 2023 Все права защищены:
+          {t("rights")}
           <br />
           <a className="text-reset fw-bold" href="#header">
-            ООО "Компания АкваМир"
+            {t("company")}
           </a>
         </div>
       </MDBContainer>
