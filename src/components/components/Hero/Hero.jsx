@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import videoWebm from "./video/hero.webm";
 import videoMp4 from "./video/hero.mp4";
@@ -24,6 +25,8 @@ const textAnimation = {
 };
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="text-center bg-image h-100">
       <video
@@ -45,19 +48,22 @@ export const Hero = () => {
         <div className="d-flex justify-content-center align-items-center h-100">
           <div className="text-white">
             <motion.h1 custom={1} variants={textAnimation} className="mb-4">
-              Высокопроизводительные системы очистки воды
+              {t("welcome")}
             </motion.h1>
-            <motion.h5 custom={2} variants={textAnimation} className="mb-5">
-              Очищаем воду для решения любых Ваших задач и производственных
-              целей.
-              <br /> Экономим Ваши ресурсы, делая автоматизированные системы
-              очистки воды доступными.
+            <motion.h5
+              custom={2}
+              variants={textAnimation}
+              className="mb-5"
+              style={{ maxWidth: "1100px" }}>
+              {t("greeting")}
+              <br />
+              {t("subgreeting")}
             </motion.h5>
 
             <motion.div custom={2} variants={textAnimation}>
               <MDBRipple>
                 <MDBBtn className="btn btn-lg" href="#form" role="button">
-                  Оставить заявку
+                  {t("request")}
                 </MDBBtn>
               </MDBRipple>
             </motion.div>

@@ -5,10 +5,14 @@
   "private": true,
   "dependencies": {
     "framer-motion": "^10.12.11",
+    "i18next": "^22.5.0",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.2.1",
     "mdb-react-ui-kit": "6.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-i18next": "^12.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

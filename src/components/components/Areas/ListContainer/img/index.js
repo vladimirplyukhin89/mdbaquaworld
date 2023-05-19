@@ -9,42 +9,42 @@ import warehouse from "./warehouse.webp";
 
 export const images = [
   {
-    text: "Гостиничные и курортные комплексы",
+    text: "areas_hotel",
     img: apartment,
     alt: "apartment"
   },
   {
-    text: "Вахтовые и коттеджные поселки",
+    text: "ares_house",
     img: house,
     alt: "house"
   },
   {
-    text: "Котельные и парогенераторные установки",
+    text: "areas_boiler",
     img: warehouse,
     alt: "warehouse"
   },
   {
-    text: "Предприятия газовой, нефтяной, металлургической промышленности",
+    text: "areas_gas",
     img: cityspace,
     alt: "cityspace"
   },
   {
-    text: "Объекты ЖКХ",
+    text: "areas_service",
     img: farmhouse,
     alt: "farmhouse"
   },
   {
-    text: "Агросекторы",
+    text: "areas_sectors",
     img: factory,
     alt: "factory"
   },
   {
-    text: "Предприятия пищевой и фармацевтической промышленности",
+    text: "areas_food",
     img: university,
     alt: "university"
   },
   {
-    text: "Воинские части, аванпосты, базы, подразделения МЧС, зоны бедствий",
+    text: "areas_units",
     img: oiltank,
     alt: "oiltank"
   }

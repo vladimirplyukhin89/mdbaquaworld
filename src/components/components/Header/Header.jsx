@@ -14,12 +14,18 @@ import {
   MDBDropdownToggle,
   MDBDropdownItem
 } from "mdb-react-ui-kit";
+import { useTranslation } from "react-i18next";
 
 import logo from "./img/logo.webp";
 import "./Header.css";
 
 export const Header = () => {
   const [showBasic, setShowBasic] = React.useState(false);
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <header className="mb-3" id="header">
@@ -48,26 +54,27 @@ export const Header = () => {
                 <MDBNavbarLink
                   active
                   href="#technologies"
+                  scrolling="smooth"
                   className="mx-3 header__link">
-                  Технологии
+                  {t("technology")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
                 <MDBNavbarLink href="#examples" className="mx-3 header__link">
-                  Конструкции
+                  {t("design")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
                 <MDBNavbarLink href="#geography" className="mx-3 header__link">
-                  География
+                  {t("geography")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
                 <MDBNavbarLink href="#footer" className="mx-3 header__link">
-                  Контакты
+                  {t("contact")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
@@ -77,9 +84,13 @@ export const Header = () => {
                 Язык
               </MDBDropdownToggle>
               <MDBDropdownMenu>
-                <MDBDropdownItem link>Английский</MDBDropdownItem>
+                <MDBDropdownItem link onClick={() => changeLanguage("en")}>
+                  Английский
+                </MDBDropdownItem>
                 <MDBDropdownItem link>Французский</MDBDropdownItem>
-                <MDBDropdownItem link>Русский</MDBDropdownItem>
+                <MDBDropdownItem link onClick={() => changeLanguage("ru")}>
+                  Русский
+                </MDBDropdownItem>
               </MDBDropdownMenu>
             </MDBDropdown>
 

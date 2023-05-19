@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { Layout } from "../Layout/Layout";
 import { MListContainer } from "./ListContainer/ListContainer";
@@ -26,6 +27,8 @@ const textAnimation = {
 };
 
 export const Areas = () => {
+  const { t } = useTranslation();
+
   return (
     <MDBContainer fluid className="p-0">
       <motion.section
@@ -35,20 +38,14 @@ export const Areas = () => {
         className="area">
         <MDBRow className="mx-auto">
           <MDBCol>
-            <h2 className="area__title">
-              Области применения систем очистки воды
-            </h2>
+            <h2 className="area__title">{t("areas")}</h2>
             <Layout>
               <motion.p
                 custom={2}
                 variants={textAnimation}
                 className="fs-4 area__subtitle">
                 <MDBIcon fas icon="star" className="area__icon" />
-                Мы проектируем, устанавливаем, и обслуживаем промышленное
-                оборудование от ведущих мировых производителей по очистке воды
-                для предприятий всех отраслей — от небольших гостиничных
-                комплексов до крупных промышленных компаний и объектов
-                стратегического назначения:
+                {t("areas_text")}
               </motion.p>
             </Layout>
           </MDBCol>

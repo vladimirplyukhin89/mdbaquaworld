@@ -1,11 +1,14 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
+import { useTranslation } from "react-i18next";
 
 import { images } from "./img/index";
 
 import "./Partners.css";
 
 export const Partners = () => {
+  const { t } = useTranslation();
+
   return (
     <MDBContainer fluid>
       <MDBRow className="my-4">
@@ -13,9 +16,7 @@ export const Partners = () => {
           sm={6}
           className="d-flex justify-content-center align-items-center">
           <div>
-            <p className="fw-bolder partners__title">
-              Нам доверяют десятки ведущих мировых лидеров:
-            </p>
+            <p className="fw-bolder partners__title">{t("leaders")}</p>
           </div>
         </MDBCol>
 
