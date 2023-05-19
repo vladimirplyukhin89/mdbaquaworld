@@ -7,6 +7,7 @@ import {
   MDBRipple
 } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { questionsData } from "./data";
 
@@ -31,13 +32,15 @@ const textAnimation = {
 };
 
 export const Questions = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}>
       <MDBContainer fluid className="questions">
-        <h3 className="pt-5 fw-bolder text-center">Часто задаваемые вопросы</h3>
+        <h3 className="pt-5 fw-bolder text-center">{t("questions_title")}</h3>
         <motion.div variants={textAnimation} custom={2}>
           <MDBAccordion
             flush

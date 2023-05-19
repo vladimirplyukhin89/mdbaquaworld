@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBContainer, MDBInput, MDBBtn, MDBRipple } from "mdb-react-ui-kit";
+import { useTranslation } from "react-i18next";
 
 import videoWebm from "./video/form.webm";
 import videoMp4 from "./video/form.mp4";
@@ -11,6 +12,8 @@ const handleSubmit = event => {
 };
 
 export const Form = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="position-relative">
       <video
@@ -53,7 +56,7 @@ export const Form = () => {
               className="mb-4"
               type="text"
               id="form3Example1"
-              label="First name"
+              label={t("name")}
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
 
@@ -61,14 +64,14 @@ export const Form = () => {
               className="mb-4"
               type="email"
               id="form1Example2"
-              label="Email address"
+              label={t("email")}
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
             <MDBInput
               className="mb-4"
               type="phone"
               id="form1Example3"
-              label="Phone"
+              label={t("phone")}
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
 
@@ -77,7 +80,7 @@ export const Form = () => {
               textarea="true"
               id="form4Example4"
               rows={6}
-              label="Message"
+              label={t("message")}
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
 
@@ -90,7 +93,7 @@ export const Form = () => {
 
             <div className="form__button">
               <MDBRipple className="mb-4">
-                <MDBBtn type="submit">Отправить</MDBBtn>
+                <MDBBtn type="submit">{t("send")}</MDBBtn>
               </MDBRipple>
             </div>
           </form>

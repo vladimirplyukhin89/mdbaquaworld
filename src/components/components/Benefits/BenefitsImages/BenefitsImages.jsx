@@ -7,6 +7,7 @@ import {
   MDBCardSubTitle
 } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { images } from "../img/index";
 
@@ -31,29 +32,26 @@ const textAnimation = {
 };
 
 export const BenefitsImages = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}>
       <MDBRow className="mt-5">
-        {images.map((item, i) => (
+        {images.map(({ text, img, alt }, i) => (
           <MDBCol key={i} md="6" lg="3" className="mb-4">
             <motion.div variants={textAnimation}>
               <MDBCard className="benefits-images">
                 <div className="mt-3">
-                  <img
-                    src={item.img}
-                    alt={item.alt}
-                    className="benefits__img"
-                  />
+                  <img src={img} alt={alt} className="benefits__img" />
                 </div>
                 <MDBCardBody className="benefits__text">
                   <MDBCardSubTitle className="benefits__subtext">
-                    {item.text}
+                    {t(text)}
                   </MDBCardSubTitle>
                 </MDBCardBody>
-                {/* <MDBBtn className="mb-3 ">Подробнее</MDBBtn> */}
               </MDBCard>
             </motion.div>
           </MDBCol>

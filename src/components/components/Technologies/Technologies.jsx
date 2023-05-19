@@ -1,13 +1,12 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { CardContainer } from "./CardContainer/CardContainer";
 import { Thesis } from "./Thesis/Thesis";
 import { imagesFreshWater } from "../../../img/technologies/index";
 import { imagesSeaWater } from "../../../img/technologies/index";
-
-import dirtyWater from "../../../img/technologies/tech-0.webp";
 
 import "./Technologies.css";
 
@@ -30,6 +29,8 @@ const textAnimation = {
 };
 
 export const Technologies = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial="hidden"
@@ -38,31 +39,27 @@ export const Technologies = () => {
       id="technologies">
       <MDBContainer fluid className="px-0 technology">
         <h2 className="text-center fw-bolder py-5 pb-3 my-0 technology__title">
-          Применяемые технологии
+          {t("technologies_title")}
         </h2>
         <motion.h3
           variants={textAnimation}
           custom={2}
           className="text-center fw-bolder technology__subtitle">
-          Стандартная технологическая схема модульных систем водоподготовки
+          {t("technologies_subtitle")}
         </motion.h3>
 
         <MDBRow>
           <MDBCol>
-            <CardContainer text="Пресная вода" images={imagesFreshWater} />
-            <Thesis
-              text="Контейнерные очистные сооружения для обработки речных вод, с
-        использованием технологий ультрафикации"
-            />
             <CardContainer
-              text="Для опреснения морской воды"
+              text={t("technologies_subtitle_2")}
+              images={imagesFreshWater}
+            />
+            <Thesis text={t("technologies_thesis")} />
+            <CardContainer
+              text={t("technologies_subtitle_3")}
               images={imagesSeaWater}
             />
-            <Thesis
-              text="Для обработки соленоватых и морских вод выпускаются установки
-        опреснения, где используются ультрафильтрационные и мембранные
-        технологии"
-            />
+            <Thesis text={t("technologies_thesis_2")} />
           </MDBCol>
         </MDBRow>
       </MDBContainer>

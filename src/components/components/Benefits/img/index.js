@@ -9,38 +9,38 @@ import solution from "./solution.webp";
 
 export const images = [
   {
-    text: "Мобильно, компактно, антивандально",
+    text: "benefits_image_text",
     img: mortarboard,
     alt: "mortarboard"
   },
   {
-    text: "Минимум строительных работ",
+    text: "benefits_image_text_2",
     img: solution,
     alt: "solution"
   },
   {
-    text: "Безопасность проекта и прохождение экспертизы",
+    text: "benefits_image_text_3",
     img: file,
     alt: "file"
   },
   {
-    text: "Возможность ввода в строй новых контейнеров",
+    text: "benefits_image_text_4",
     img: puzzle,
     alt: "puzzle"
   },
   {
-    text: "100%-я заводская готовность",
+    text: "benefits_image_text_5",
     img: setting,
     alt: "setting"
   },
   {
-    text: "Соотвествие природным нормам",
+    text: "benefits_image_text_6",
     img: research,
     alt: "research"
   },
-  { text: "Срок службы более 20 лет", img: clock, alt: "clock" },
+  { text: "benefits_image_text_7", img: clock, alt: "clock" },
   {
-    text: "Максимально сжатые сроки ввода в эксплуатацию",
+    text: "benefits_image_text_8",
     img: fire,
     alt: "fire"
   }

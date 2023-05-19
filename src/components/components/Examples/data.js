@@ -66,7 +66,7 @@ export const examplesBlocks = [
   {
     title: "examples_frames_title_3",
     steps: [
-      { text: "example_frames_text_4", icon: "check" },
+      { text: "example_frames_text_7", icon: "check" },
       { text: "example_frames_text_8", icon: "check" }
     ],
     image: block3
@@ -74,8 +74,8 @@ export const examplesBlocks = [
   {
     title: "examples_frames_title_3",
     steps: [
-      { text: "example_frames_text_4", icon: "check" },
-      { text: "example_frames_text_4", icon: "check" }
+      { text: "example_frames_text_7", icon: "check" },
+      { text: "example_frames_text_5", icon: "check" }
     ],
     image: block4
   }

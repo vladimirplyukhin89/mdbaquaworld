@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBContainer } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { Layout } from "../Layout/Layout";
 import { Text } from "./Text/Text";
@@ -27,6 +28,8 @@ const textAnimation = {
 };
 
 export const Benefits = () => {
+  const { t } = useTranslation();
+
   return (
     <MDBContainer fluid className="px-0">
       <motion.section
@@ -36,7 +39,7 @@ export const Benefits = () => {
         className="benefits">
         <Layout>
           <h2 variants={textAnimation} className="benefits__title">
-            Преимущества наших станций
+            {t("benefits_title")}
           </h2>
           <Text />
         </Layout>

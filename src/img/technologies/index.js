@@ -18,26 +18,26 @@ export const imagesFreshWater = [
     arrow: arrow
   },
   {
-    text: "Механическая очистка",
+    text: "technologies_text",
     img: purification,
     alt: "purification",
     arrow: arrow
   },
   {
-    text: "Осветление",
+    text: "technologies_text_2",
     img: clarification,
     alt: "clarification",
     arrow: arrow
   },
-  { text: "Комплексная очистка", img: cleaning, alt: "cleaning", arrow: arrow },
+  { text: "technologies_text_3", img: cleaning, alt: "cleaning", arrow: arrow },
   {
-    text: "Ультрафильтрация",
+    text: "technologies_text_4",
     img: ultrafication,
     alt: "ultrafication",
     arrow: arrow
   },
   {
-    text: "УФ-дезинфекция",
+    text: "technologies_text_5",
     img: disinfection,
     alt: "disinfection",
     arrow: arrow
@@ -58,27 +58,27 @@ export const imagesSeaWater = [
     arrow: arrow
   },
   {
-    text: "Механическая очистка",
+    text: "technologies_text",
     img: purification,
     alt: "purification",
     arrow: arrow
   },
   {
-    text: "Осветление",
+    text: "technologies_text_2",
     img: clarification,
     alt: "clarification",
     arrow: arrow
   },
   {
-    text: "Ультрафильтрация",
+    text: "technologies_text_4",
     img: ultrafication,
     alt: "ultrafication",
     arrow: arrow
   },
-  { text: "Сорбция", img: sorption, alt: "sorption", arrow: arrow },
-  { text: "Осмос", img: osmosis, alt: "osmosis", arrow: arrow },
+  { text: "technologies_text_6", img: sorption, alt: "sorption", arrow: arrow },
+  { text: "technologies_text_7", img: osmosis, alt: "osmosis", arrow: arrow },
   {
-    text: "УФ-дезинфекция",
+    text: "technologies_text_5",
     img: disinfection,
     alt: "disinfection",
     arrow: ""

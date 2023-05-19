@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBRow, MDBCol, MDBIcon } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { list } from "./data";
 
@@ -25,6 +26,8 @@ const textAnimation = {
 };
 
 export const Text = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial="hidden"
@@ -40,7 +43,7 @@ export const Text = () => {
               <motion.li key={i}>
                 <p className="fs-4 text-white">
                   <MDBIcon fas icon="check-circle" className="benefits__icon" />
-                  {item}
+                  {t(item)}
                 </p>
               </motion.li>
             ))}
