@@ -9,28 +9,30 @@ import {
   MDBModalBody,
   MDBModalFooter
 } from "mdb-react-ui-kit";
+import { useTranslation } from "react-i18next";
 
-import { modalContext } from "../../components/context/modalContext";
+import { modalContext } from "../../context/modalContext";
 
 export const Modal = () => {
   const { basicModal, setBasicModal, toggleShow } = useContext(modalContext);
+  const { t } = useTranslation();
 
   return (
     <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
       <MDBModalDialog>
         <MDBModalContent>
           <MDBModalHeader>
-            <MDBModalTitle>Спасибо</MDBModalTitle>
+            <MDBModalTitle>{t("modal_title")}</MDBModalTitle>
             <MDBBtn
               className="btn-close"
               color="none"
               onClick={toggleShow}></MDBBtn>
           </MDBModalHeader>
-          <MDBModalBody>Форма отправлена успешно</MDBModalBody>
+          <MDBModalBody>{t("modal_sibtitle")}</MDBModalBody>
 
           <MDBModalFooter>
             <MDBBtn color="secondary" onClick={toggleShow}>
-              Ok
+              {t("modal_close")}
             </MDBBtn>
           </MDBModalFooter>
         </MDBModalContent>

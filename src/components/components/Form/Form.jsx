@@ -1,7 +1,13 @@
 import React, { useContext } from "react";
-import { MDBContainer, MDBInput, MDBBtn, MDBRipple } from "mdb-react-ui-kit";
+import {
+  MDBContainer,
+  MDBInput,
+  MDBBtn,
+  MDBRipple,
+  MDBCheckbox
+} from "mdb-react-ui-kit";
 import { useTranslation } from "react-i18next";
-import { modalContext } from "../../context/modalContext";
+import { modalContext } from "../../../context";
 
 import videoWebm from "./video/form.webm";
 import videoMp4 from "./video/form.mp4";
@@ -88,11 +94,11 @@ export const Form = () => {
             />
 
             {/* <MDBCheckbox
-        wrapperClass="d-flex justify-content-start mb-4"
-        id="form4Example4"
-        label="Я согласен"
-        defaultChecked
-      /> */}
+              wrapperClass="d-flex justify-content-start mb-4"
+              id="form4Example4"
+              label="Я согласен"
+              defaultChecked
+            /> */}
 
             <div className="form__button">
               <MDBRipple className="mb-4">

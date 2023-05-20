@@ -1,14 +1,17 @@
 import React, { Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import "./css/index.css";
-import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import i18next from "i18next";
 import HttpApi from "i18next-http-backend";
 import { initReactI18next, I18nextProvider } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
+import { ModalContextProvider } from "./context";
+
 import { Loading } from "./UI/Loading/Loading";
 import App from "./components/App";
+
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import "./css/index.css";
 
 //Localisaton
 i18next
@@ -34,9 +37,11 @@ const root = createRoot(container);
 root.render(
   <Suspense fallback={<Loading />}>
     <I18nextProvider i18n={i18next}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <ModalContextProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ModalContextProvider>
     </I18nextProvider>
   </Suspense>
 );

@@ -90,5 +90,8 @@
   "contact_footer": "Nos contacts",
   "social_networks": "Nous sommer sur les réseaux sociaux",
   "rights": "© 2023 Tous droits réservés:",
-  "company": "AquaMir Compagnie OOO"
+  "company": "AquaMir Compagnie OOO",
+  "modal_title": "Merci",
+  "modal_sibtitle": "Formulaire envoyé avec succès",
+  "modal_close": "D'accord"
 }
