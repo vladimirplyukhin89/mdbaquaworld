@@ -5,7 +5,7 @@ import "./ExCarousel.css";
 
 export const ExCarousel = ({ images }) => {
   return (
-    <MDBCarousel>
+    <MDBCarousel touch={true}>
       <div>
         {images.map(({ src, alt }, i) => (
           <MDBCarouselItem

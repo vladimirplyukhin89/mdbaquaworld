@@ -48,7 +48,7 @@ export const examplesBlocks = [
       { text: "example_frames_text_2", icon: "check" },
       { text: "example_frames_text_3", icon: "check" },
       { text: "example_frames_text_4", icon: "check" },
-      { text: "example_frames_text_4", icon: "check" },
+      { text: "example_frames_text_5", icon: "check" },
       { text: "example_frames_text_6", icon: "check" }
     ],
     image: block1

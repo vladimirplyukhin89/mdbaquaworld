@@ -47,13 +47,16 @@ export const Hero = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
         <div className="d-flex justify-content-center align-items-center h-100">
           <div className="text-white">
-            <motion.h1 custom={1} variants={textAnimation} className="mb-4">
+            <motion.h1
+              custom={1}
+              variants={textAnimation}
+              className="mb-4 mx-3">
               {t("welcome")}
             </motion.h1>
             <motion.h5
               custom={2}
               variants={textAnimation}
-              className="mb-5"
+              className="pb-5 mx-3 hero__subtitle"
               style={{ maxWidth: "1100px" }}>
               {t("greeting")}
               <br />

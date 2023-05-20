@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.710f621e.css",
-    "main.js": "/static/js/main.26bd30b3.js",
+    "main.js": "/static/js/main.f58ed7d9.js",
     "static/media/form.mp4": "/static/media/form.d8097710cac0e802d3c4.mp4",
     "static/media/form.webm": "/static/media/form.388ce1751d903a704837.webm",
     "static/media/hero.webm": "/static/media/hero.c06c390f98d38cc0be25.webm",
@@ -9,7 +9,10 @@
     "static/media/typesBlock-2.webp": "/static/media/typesBlock-2.12f0203205d4d55516ed.webp",
     "static/media/typesBlock-3.webp": "/static/media/typesBlock-3.05b1cc80d3643a5c1838.webp",
     "static/media/typesBlock-4.webp": "/static/media/typesBlock-4.b25f2788498637115395.webp",
+    "static/media/typesFrame-3.webp": "/static/media/typesFrame-3.0361d2a548d41e11f3e6.webp",
+    "static/media/typesFrame-2.webp": "/static/media/typesFrame-2.1da09fa61f0314861afc.webp",
     "static/media/typesFrame-1.webp": "/static/media/typesFrame-1.ba832892eccb9ae7d128.webp",
+    "static/media/typesFrame-4.webp": "/static/media/typesFrame-4.55ac9b8436f542eb6042.webp",
     "static/media/typesBlock-1.webp": "/static/media/typesBlock-1.6c233785c458ec7e1949.webp",
     "static/media/rosneft.webp": "/static/media/rosneft.d0559c47d2ce164b7d09.webp",
     "static/media/gazprom.webp": "/static/media/gazprom.ef9c748effeb6facac66.webp",
@@ -50,10 +53,10 @@
     "static/media/country-3.webp": "/static/media/country-3.443d5e948e5b45550a62.webp",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.710f621e.css.map": "/static/css/main.710f621e.css.map",
-    "main.26bd30b3.js.map": "/static/js/main.26bd30b3.js.map"
+    "main.f58ed7d9.js.map": "/static/js/main.f58ed7d9.js.map"
   },
   "entrypoints": [
     "static/css/main.710f621e.css",
-    "static/js/main.26bd30b3.js"
+    "static/js/main.f58ed7d9.js"
   ]
 }

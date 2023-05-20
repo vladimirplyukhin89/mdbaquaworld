@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -81,14 +81,19 @@ export const Header = () => {
 
             <MDBDropdown>
               <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                {t("lg")}
+                <MDBIcon icon="globe" /> {t("lg")}
               </MDBDropdownToggle>
               <MDBDropdownMenu>
                 <MDBDropdownItem link onClick={() => changeLanguage("en")}>
+                  <MDBIcon icon="flag" flag="us" />
                   {t("en")}
                 </MDBDropdownItem>
-                <MDBDropdownItem link> {t("fr")}</MDBDropdownItem>
+                <MDBDropdownItem link onClick={() => changeLanguage("fr")}>
+                  <MDBIcon icon="flag" flag="fr" />
+                  {t("fr")}
+                </MDBDropdownItem>
                 <MDBDropdownItem link onClick={() => changeLanguage("ru")}>
+                  <MDBIcon icon="flag" flag="ru" />
                   {t("ru")}
                 </MDBDropdownItem>
               </MDBDropdownMenu>
