@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { MDBContainer, MDBInput, MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 import { useTranslation } from "react-i18next";
+import { modalContext } from "../../context/modalContext";
 
 import videoWebm from "./video/form.webm";
 import videoMp4 from "./video/form.mp4";
 
 import "./Form.css";
 
-const handleSubmit = event => {
-  event.preventDefault();
-};
-
 export const Form = () => {
   const { t } = useTranslation();
+  const { toggleShow } = useContext(modalContext);
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    toggleShow();
+  };
 
   return (
     <div className="position-relative">
