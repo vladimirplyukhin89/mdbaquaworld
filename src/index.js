@@ -19,9 +19,9 @@ i18next
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    lng: "fr",
+    lng: "en",
     supportedLngs: ["en", "ru", "fr"],
-    fallbackLng: "en",
+    fallbackLng: "fr",
     detection: {
       order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
       caches: ["cookie"]
