@@ -23,7 +23,7 @@ export const ExFrames = ({ example }) => {
           </div>
         </MDBCol>
         <MDBCol md={6} lg={6}>
-          <img src={image} alt={t(title)} className="w-100" />
+          <img src={image} alt={t(title)} className="w-75" />
         </MDBCol>
       </MDBRow>
     </MDBContainer>
