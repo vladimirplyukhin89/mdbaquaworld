@@ -55,12 +55,15 @@ export const Form = () => {
           backgroundColor: "rgba(0, 0, 0, 0.5)"
         }}></div>
 
-      <MDBContainer fluid className="m-0 p-0" style={{ height: "80vh" }}>
+      <MDBContainer
+        fluid
+        className="m-0 p-0"
+        style={{ height: "100vh", width: "100%" }}>
         <div className="form">
           <form
             id="form"
             onSubmit={handleSubmit}
-            className="w-50 pt-5 mt-5 form-outline form-white">
+            className="w-50 pt-5 form-outline form-white">
             <MDBInput
               className="mb-4"
               type="text"

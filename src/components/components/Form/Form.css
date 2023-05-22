@@ -1,12 +1,16 @@
 .form {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  margin: 0 auto;
 }
 
 .form__button {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding-top: 7rem;
+  }
 }
 
 @media (min-width: 992px) {

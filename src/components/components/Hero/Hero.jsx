@@ -3,6 +3,8 @@ import { MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+import { Layout } from "../Layout";
+
 import videoWebm from "./video/hero.webm";
 import videoMp4 from "./video/hero.mp4";
 
@@ -46,31 +48,34 @@ export const Hero = () => {
         className="mask h-100"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
         <div className="d-flex justify-content-center align-items-center h-100">
-          <div className="text-white">
-            <motion.h1
-              custom={1}
-              variants={textAnimation}
-              className="mb-4 mx-3">
-              {t("welcome")}
-            </motion.h1>
-            <motion.h5
-              custom={2}
-              variants={textAnimation}
-              className="pb-5 mx-3 hero__subtitle"
-              style={{ maxWidth: "1100px" }}>
-              {t("greeting")}
-              <br />
-              {t("subgreeting")}
-            </motion.h5>
+          <Layout>
+            <div className="text-white">
+              <motion.h1
+                custom={1}
+                variants={textAnimation}
+                className="mb-4 mx-3"
+                style={{ wordBreak: "break-word" }}>
+                {t("welcome")}
+              </motion.h1>
+              <motion.h5
+                custom={2}
+                variants={textAnimation}
+                className="pb-5"
+                style={{ maxWidth: "1100px" }}>
+                {t("greeting")}
+                <br />
+                {t("subgreeting")}
+              </motion.h5>
 
-            <motion.div custom={2} variants={textAnimation}>
-              <MDBRipple>
-                <MDBBtn className="btn btn-lg" href="#form" role="button">
-                  {t("request")}
-                </MDBBtn>
-              </MDBRipple>
-            </motion.div>
-          </div>
+              <motion.div custom={2} variants={textAnimation}>
+                <MDBRipple>
+                  <MDBBtn className="btn btn-lg" href="#form" role="button">
+                    {t("request")}
+                  </MDBBtn>
+                </MDBRipple>
+              </motion.div>
+            </div>
+          </Layout>
         </div>
       </motion.div>
     </div>

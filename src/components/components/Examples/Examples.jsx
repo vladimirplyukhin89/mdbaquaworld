@@ -55,7 +55,7 @@ export const Examples = () => {
       <Layout>
         <MDBRow className="examples__blocks">
           <MDBCol sm={12} md={6}>
-            <ExCarousel images={carouselBlocks} />
+            {/* <ExCarousel images={carouselBlocks} /> */}
           </MDBCol>
           <MDBCol sm={12} md={6}>
             <ExInfo
@@ -94,7 +94,7 @@ export const Examples = () => {
 
         <MDBRow className="examples__frames">
           <MDBCol sm={12} md={6}>
-            <ExCarousel images={carouselFrames} />
+            {/* <ExCarousel images={carouselFrames} /> */}
           </MDBCol>
           <MDBCol sm={12} md={6}>
             <ExInfo
