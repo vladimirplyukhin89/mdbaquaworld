@@ -53,7 +53,7 @@ export const Hero = () => {
               <motion.h1
                 custom={1}
                 variants={textAnimation}
-                className="mb-4 mx-3"
+                className="mb-4"
                 style={{ wordBreak: "break-word" }}>
                 {t("welcome")}
               </motion.h1>

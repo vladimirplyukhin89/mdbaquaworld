@@ -4,7 +4,8 @@ import {
   MDBInput,
   MDBBtn,
   MDBRipple,
-  MDBCheckbox
+  MDBCheckbox,
+  MDBTextArea
 } from "mdb-react-ui-kit";
 import { useTranslation } from "react-i18next";
 import { modalContext } from "../../../context";
@@ -63,12 +64,13 @@ export const Form = () => {
           <form
             id="form"
             onSubmit={handleSubmit}
-            className="w-50 pt-5 form-outline form-white">
+            className="w-50 pt-5 m-auto form-outline form-white">
             <MDBInput
               className="mb-4"
               type="text"
               id="form3Example1"
               label={t("name")}
+              required
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
 
@@ -77,19 +79,20 @@ export const Form = () => {
               type="email"
               id="form1Example2"
               label={t("email")}
+              required
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
             <MDBInput
               className="mb-4"
-              type="phone"
+              type="tel"
               id="form1Example3"
               label={t("phone")}
+              required
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
 
-            <MDBInput
+            <MDBTextArea
               wrapperClass="mb-4 textarea-lg"
-              textarea="true"
               id="form4Example4"
               rows={6}
               label={t("message")}

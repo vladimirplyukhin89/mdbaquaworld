@@ -20,12 +20,12 @@ export const Footer = () => {
           <MDBCol md="4" lg="3" xl="3" className="px-2 mb-4 footer__links">
             <h6 className="text-uppercase fw-bold mb-4">{t("sitemap")}</h6>
             <p className="footer__links">
-              <a href="#technology" className="footer__links-link">
+              <a href="#technologies" className="footer__links-link">
                 {t("technology")}
               </a>
             </p>
             <p className="footer__links">
-              <a href="#types" className="footer__links-link">
+              <a href="#examples" className="footer__links-link">
                 {t("design")}
               </a>
             </p>

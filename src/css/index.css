@@ -4,6 +4,6 @@
 
 body {
   color: var(--clr-black-3);
-  background-color: var(--bg-blue);
+  background-color: var(--clr-white);
   overflow-x: hidden;
 }

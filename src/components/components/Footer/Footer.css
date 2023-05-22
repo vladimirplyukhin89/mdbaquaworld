@@ -3,7 +3,7 @@
 }
 
 .footer__links-link:hover {
-  color: var(--clr-black-3) !important;
+  color: var(--bg-deepblue) !important;
 }
 
 .footer__navigation-icon {
