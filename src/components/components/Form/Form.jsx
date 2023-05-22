@@ -53,7 +53,7 @@ export const Form = () => {
           height: "100%",
           objectFit: "cover",
           zIndex: -1,
-          backgroundColor: "rgba(0, 0, 0, 0.5)"
+          backgroundColor: "rgba(0, 0, 0, 0.6)"
         }}></div>
 
       <MDBContainer
@@ -99,12 +99,13 @@ export const Form = () => {
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
 
-            {/* <MDBCheckbox
-              wrapperClass="d-flex justify-content-start mb-4"
+            <MDBCheckbox
+              wrapperClass="d-flex justify-content-start mb-4 text-white"
               id="form4Example4"
-              label="Я согласен"
+              label={t("label")}
+              required
               defaultChecked
-            /> */}
+            />
 
             <div className="form__button">
               <MDBRipple className="mb-4">
