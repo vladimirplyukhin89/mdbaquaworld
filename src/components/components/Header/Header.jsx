@@ -101,17 +101,17 @@ export const Header = () => {
 
             <MDBNavbarItem className="header__contacts">
               <MDBNavbarLink
-                href="tel:+78463103422"
+                href="tel:+995551117551"
                 className="px-2 py-1 header__link">
                 <MDBIcon fas icon="phone" className="mx-2" width="40" />
-                +7 (846) 310-34-22
+                +995 551-117-551
               </MDBNavbarLink>
 
               <MDBNavbarLink
                 href="tel:+79171033310"
                 className="px-2 py-1 header__link">
                 <MDBIcon fas icon="mobile" className="mx-2" width="40" />
-                +7 (917) 10-333-10
+                +7 (917) 103-33-10
               </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBCollapse>
