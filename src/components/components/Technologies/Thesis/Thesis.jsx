@@ -32,7 +32,7 @@ export const Thesis = ({ text }) => {
       <motion.div
         variants={blockAnimation}
         custom={1}
-        className="d-flex align-items-center justify-content-between bg-primary thesis">
+        className="d-flex align-items-center justify-content-between  thesis">
         <p className="thesis__text">{text}</p>
 
         <img

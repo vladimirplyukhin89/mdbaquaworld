@@ -60,7 +60,7 @@ export const Hero = () => {
               <motion.h5
                 custom={2}
                 variants={textAnimation}
-                className="pb-5"
+                className="pb-5 fw-normal"
                 style={{ maxWidth: "1100px" }}>
                 {t("greeting")}
                 <br />
