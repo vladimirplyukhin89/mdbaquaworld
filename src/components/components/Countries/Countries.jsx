@@ -33,7 +33,7 @@ export const Countries = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}>
-      <MDBContainer fluid className="countries py-5" id="geography">
+      <MDBContainer fluid className="countries pb-5" id="geography">
         <MDBRow>
           <MDBCol className="pt-3 mb-2 text-center">
             <h2 className="countries__title">{t("geography_title")}</h2>

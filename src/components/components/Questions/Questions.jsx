@@ -45,7 +45,7 @@ export const Questions = () => {
           <MDBAccordion
             flush
             initialActive={1}
-            className="p-5 questions__wrapper">
+            className="px-3 py-5 questions__wrapper">
             {questionsData.map(({ id, title, content }) => (
               <MDBRipple key={id} className="w-100">
                 <MDBAccordionItem

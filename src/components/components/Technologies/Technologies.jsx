@@ -15,12 +15,10 @@ export const Technologies = () => {
   return (
     <div id="technologies">
       <MDBContainer fluid className="px-0 technology">
-        <h2 className="text-center fw-bolder py-5 pb-3 my-0 technology__title">
+        <h2 className="py-5 pb-3 technology__title">
           {t("technologies_title")}
         </h2>
-        <h4 className="text-center fw-bolder mx-3 technology__subtitle">
-          {t("technologies_subtitle")}
-        </h4>
+        <h4 className="technology__subtitle">{t("technologies_subtitle")}</h4>
 
         <MDBRow>
           <MDBCol>

@@ -50,7 +50,7 @@ export const CardContainer = ({ images, text }) => {
       <motion.p
         variants={textAnimation}
         custom={1}
-        className="text-center mb-4 fs-4 fw-bolder cardContainer__title">
+        className="cardContainer__title">
         {text}
       </motion.p>
 

@@ -7,7 +7,11 @@
 
 .cardContainer__title {
   color: var(--bg-deepblue);
-  margin-top: 2rem;
+  margin-top: 1rem 0;
+  font-weight: 500;
+  padding: 1rem;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media (min-width: 1190px) {

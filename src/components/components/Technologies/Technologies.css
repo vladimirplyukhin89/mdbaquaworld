@@ -1,20 +1,19 @@
 .technology {
   background-color: var(--bg-lightblue);
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .technology__title {
   color: var(--bg-deepblue);
-  /* background-color: var(--clr-white); */
   font-weight: 600;
-  text-align: center;
-  margin: 2rem 0;
+  margin: 0;
 }
 
 .technology__subtitle {
   color: var(--bg-deepblue);
-  /* background-color: var(--clr-white); */
-  text-align: center;
   line-height: 1.7rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  margin: 0 1rem;
 }

@@ -14,6 +14,7 @@
 
 ### Start:
 
+- "npm install"
 - "npm start"
 
 ### Production:

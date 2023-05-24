@@ -33,7 +33,7 @@ export const Form = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          maxHeight: "100%",
+          maxHeight: "100vh",
           objectFit: "cover",
           zIndex: -2
         }}
@@ -59,7 +59,7 @@ export const Form = () => {
       <MDBContainer
         fluid
         className="m-0 p-0"
-        style={{ height: "100vh", width: "100%" }}>
+        style={{ height: "100vh", minHeight: "100vh", width: "100%" }}>
         <div className="form">
           <form
             id="form"
