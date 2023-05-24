@@ -1,5 +1,10 @@
 .hero {
-  max-height: 488px;
+  max-height: 700px;
+}
+
+.hero__video {
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .hero__wrapper {

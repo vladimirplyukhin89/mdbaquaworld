@@ -10,6 +10,10 @@
 }
 
 .header__navigation-icon {
+  color: var(--bg-grey) !important;
+}
+
+.header__navigation-icon:hover {
   color: var(--bg-deepblue) !important;
 }
 
@@ -23,11 +27,11 @@
 }
 
 .header__contacts {
-  display: flex;
+  display: inline-flex;
   flex-direction: column-reverse;
   margin-left: 10px;
   width: 100%;
-  max-width: 185px !important;
+  max-width: 175px !important;
 }
 
 @keyframes toggle {

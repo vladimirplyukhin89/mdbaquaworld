@@ -34,7 +34,7 @@ export const Hero = () => {
   return (
     <div className="text-center bg-image hero">
       <video
-        className="h-100 w-100"
+        className="hero__video"
         playsInline
         autoPlay
         muted
@@ -49,7 +49,7 @@ export const Hero = () => {
         whileInView="visible"
         viewport={{ delay: 0.2, once: true }}
         className="mask h-100 hero__wrapper">
-        <div className="d-flex justify-content-center align-items-center h-100">
+        <div className="d-flex justify-content-center align-items-center h-100 mt-3">
           <Layout>
             <div className="text-white">
               <motion.h1

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -20,7 +20,7 @@ import logo from "./img/logo.webp";
 import "./Header.css";
 
 export const Header = () => {
-  const [showBasic, setShowBasic] = React.useState(false);
+  const [showBasic, setShowBasic] = useState(false);
   const { t, i18n } = useTranslation();
 
   const changeLanguage = lng => {
@@ -55,25 +55,31 @@ export const Header = () => {
                   active
                   href="#technologies"
                   scrolling="smooth"
-                  className="mx-3 header__link">
+                  className="mx-0 px-2 header__link">
                   {t("technology")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink href="#examples" className="mx-3 header__link">
+                <MDBNavbarLink
+                  href="#examples"
+                  className="mx-0 px-2 header__link">
                   {t("design")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink href="#geography" className="mx-3 header__link">
+                <MDBNavbarLink
+                  href="#geography"
+                  className="mx-0 px-2 header__link">
                   {t("geography")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink href="#footer" className="mx-3 header__link">
+                <MDBNavbarLink
+                  href="#footer"
+                  className="mx-0 px-2 header__link">
                   {t("contact")}
                 </MDBNavbarLink>
               </MDBNavbarItem>
@@ -102,14 +108,14 @@ export const Header = () => {
             <MDBNavbarItem className="header__contacts">
               <MDBNavbarLink
                 href="tel:+995551117551"
-                className="px-2 py-1 header__link">
+                className="py-1 header__link">
                 <MDBIcon fas icon="phone" className="mx-2" width="40" />
                 +995 551-117-551
               </MDBNavbarLink>
 
               <MDBNavbarLink
                 href="tel:+79171033310"
-                className="px-2 py-1 header__link">
+                className="py-1 header__link">
                 <MDBIcon fas icon="mobile" className="mx-2" width="40" />
                 +7 (917) 103-33-10
               </MDBNavbarLink>
