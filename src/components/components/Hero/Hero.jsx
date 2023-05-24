@@ -8,6 +8,8 @@ import { Layout } from "../Layout";
 import videoWebm from "./video/hero.webm";
 import videoMp4 from "./video/hero.mp4";
 
+import "./Hero.css";
+
 const textAnimation = {
   hidden: {
     y: -100,
@@ -30,13 +32,14 @@ export const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="text-center bg-image">
+    <div className="text-center bg-image hero">
       <video
-        style={{ minWidth: "100%", minHeight: "100%" }}
+        className="h-100 w-100"
         playsInline
         autoPlay
         muted
-        loop>
+        loop
+        preload="auto">
         <source className="h-100" src={videoWebm} type="video/webm" />
         <source className="h-100" src={videoMp4} type="video/mp4" />
       </video>
@@ -45,23 +48,20 @@ export const Hero = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ delay: 0.2, once: true }}
-        className="mask h-100"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+        className="mask h-100 hero__wrapper">
         <div className="d-flex justify-content-center align-items-center h-100">
           <Layout>
             <div className="text-white">
               <motion.h1
                 custom={1}
                 variants={textAnimation}
-                className="mb-4"
-                style={{ wordBreak: "break-word" }}>
+                className="mb-4 hero__title">
                 {t("welcome")}
               </motion.h1>
               <motion.h5
                 custom={2}
                 variants={textAnimation}
-                className="pb-5 fw-normal"
-                style={{ maxWidth: "1100px" }}>
+                className="pb-5 fw-normal hero__subtitle">
                 {t("greeting")}
                 <br />
                 {t("subgreeting")}

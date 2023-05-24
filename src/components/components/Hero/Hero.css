@@ -1,0 +1,15 @@
+.hero {
+  max-height: 488px;
+}
+
+.hero__wrapper {
+  background-color: var(--bg-overlay);
+}
+
+.hero__title {
+  word-break: break-word;
+}
+
+.hero__subtitle {
+  max-width: 1100px;
+}
