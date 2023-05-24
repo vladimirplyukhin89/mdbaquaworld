@@ -64,7 +64,7 @@ export const Form = () => {
           <form
             id="form"
             onSubmit={handleSubmit}
-            className="w-50 pt-5 m-auto form-outline form-white">
+            className="w-75 pt-5 m-auto form-outline form-white">
             <MDBInput
               className="mb-4"
               type="text"
