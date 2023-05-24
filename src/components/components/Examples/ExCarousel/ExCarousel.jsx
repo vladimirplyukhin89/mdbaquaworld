@@ -5,12 +5,12 @@ import "./ExCarousel.css";
 
 export const ExCarousel = ({ images }) => {
   return (
-    <MDBCarousel touch={true}>
+    <MDBCarousel touch={true} showIndicators>
       <div>
         {images.map(({ src, alt }, i) => (
           <MDBCarouselItem
             key={i}
-            className="w-100 d-block mx-auto excarousel"
+            className="d-block mx-auto excarousel"
             itemId={i + 1}
             src={src}
             alt={alt}

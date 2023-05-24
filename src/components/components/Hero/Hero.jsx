@@ -30,7 +30,7 @@ export const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="text-center bg-image h-100">
+    <div className="text-center bg-image">
       <video
         style={{ minWidth: "100%", minHeight: "100%" }}
         playsInline
