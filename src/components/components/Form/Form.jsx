@@ -25,46 +25,19 @@ export const Form = () => {
   };
 
   return (
-    <div className="position-relative">
-      <video
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          maxHeight: "100vh",
-          objectFit: "cover",
-          zIndex: -2
-        }}
-        playsInline
-        autoPlay
-        muted
-        loop>
+    <div className="form">
+      <video className="form__background" playsInline autoPlay muted loop>
         <source src={videoWebm} type="video/webm" />
         <source src={videoMp4} type="video/mp4" />
       </video>
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: -1,
-          backgroundColor: "rgba(0, 0, 0, 0.6)"
-        }}></div>
+      <div className="form-overlay"></div>
 
-      <MDBContainer
-        fluid
-        className="m-0 p-0"
-        style={{ height: "100vh", minHeight: "100vh", width: "100%" }}>
-        <div className="form">
+      <MDBContainer fluid className="form__container">
+        <div className="form__block">
           <form
             id="form"
             onSubmit={handleSubmit}
-            className="w-75 pt-5 m-auto form-outline form-white">
+            className="w-75 m-auto form-outline form-white">
             <MDBInput
               className="mb-4"
               type="text"

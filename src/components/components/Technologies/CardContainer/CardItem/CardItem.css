@@ -42,6 +42,10 @@
   height: 20px;
 }
 
+.technologies__arrow img {
+  padding-left: 10px;
+}
+
 @media (min-width: 576px) {
   .technologies__icon {
     width: 100px;
@@ -85,5 +89,9 @@
   .technologies__arrow {
     transform: rotate(0deg);
     margin-left: 10px;
+  }
+
+  .technologies__arrow img {
+    padding-left: 0;
   }
 }
