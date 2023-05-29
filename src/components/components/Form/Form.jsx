@@ -6,9 +6,7 @@ import {
   MDBRipple,
   MDBCheckbox,
   MDBTextArea,
-  MDBCol,
-  MDBValidation,
-  MDBValidationItem
+  MDBCol
 } from "mdb-react-ui-kit";
 import { useTranslation } from "react-i18next";
 import { modalContext } from "../../../context";
@@ -19,24 +17,24 @@ import videoMp4 from "./video/form.mp4";
 import "./Form.css";
 
 export const Form = () => {
-  // const [formValue, setFormValue] = useState({
-  //   name: "",
-  //   email: "",
-  //   tel: "",
-  //   message: ""
-  // });
+  const [formValue, setFormValue] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: ""
+  });
   const { t } = useTranslation();
   const { toggleShow } = useContext(modalContext);
 
-  // const onChange = e => {
-  //   setFormValue({ ...formValue, [e.target.name]: e.target.value });
-  //   console.log(formValue);
-  // };
+  const onChange = e => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
+  };
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log("Send");
-    // setFormValue({ name: "", email: "", tel: "", message: "" });
+    setFormValue({ name: "", email: "", tel: "", message: "" });
     toggleShow();
   };
 
@@ -54,12 +52,14 @@ export const Form = () => {
             id="form"
             onSubmit={onSubmit}
             className="w-75 m-auto form-outline form-white"
-            action="../../../mail/mail.php"
+            action="/mail/mail.php"
             method="POST">
             <MDBInput
               className="mb-4"
               type="text"
               id="form3Example1"
+              value={formValue.name}
+              onChange={onChange}
               label={t("name")}
               name="name"
               required
@@ -70,6 +70,8 @@ export const Form = () => {
               className="mb-4"
               type="email"
               id="form1Example2"
+              value={formValue.email}
+              onChange={onChange}
               label={t("email")}
               name="email"
               required
@@ -79,6 +81,8 @@ export const Form = () => {
               className="mb-4"
               type="tel"
               id="form1Example3"
+              value={formValue.tel}
+              onChange={onChange}
               label={t("phone")}
               name="tel"
               required
@@ -88,6 +92,8 @@ export const Form = () => {
             <MDBTextArea
               className="mb-4 textarea-lg"
               id="form4Example4"
+              value={formValue.message}
+              onChange={onChange}
               rows={6}
               label={t("message")}
               name="message"
@@ -108,9 +114,9 @@ export const Form = () => {
               <small>
                 {t("policy")} <br />
                 <a
-                  className="text-primary"
+                  className="text-dark"
                   target="_blank"
-                  href="../../../../Rights.pdf">
+                  href="../../../Rights.pdf">
                   {t("policy2")}{" "}
                 </a>
                 {t("policy3")}

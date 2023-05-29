@@ -42,9 +42,9 @@ export const Footer = () => {
             </h6>
             <p className="footer__links">
               <a
-                href="mailto:info@aquaworld63.ru"
+                href="mailto:info@aquaworld.ltd"
                 className="footer__links-link">
-                info@aquaworld63.ru
+                info@aquaworld.ltd
               </a>
             </p>
             <p className="footer__links">
