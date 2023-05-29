@@ -77,7 +77,7 @@
   "email": "Email",
   "phone": "Téléphone",
   "message": "Message",
-  "label": "Accepter les termes et conditions",
+  "check": "Accepter les termes et conditions",
   "send": "Envoyer",
   "questions_title": "FAQ:",
   "questions": "Dans quelles industries travaillez-vous?",
@@ -93,5 +93,8 @@
   "company": "AQUAWORLD Compagnie OOO",
   "modal_title": "Merci",
   "modal_sibtitle": "Formulaire envoyé avec succès",
-  "modal_close": "D'accord"
+  "modal_close": "D'accord",
+  "policy": "En soumettant ce formulaire, vous confirmez que vous êtes d'accord avec notre",
+  "policy2": "Politique",
+  "policy3": "concernant le traitement des données personnelles."
 }
