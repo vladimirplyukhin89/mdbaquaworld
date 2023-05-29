@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MDBBtn, MDBRipple } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -29,12 +29,18 @@ const textAnimation = {
 };
 
 export const Hero = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
   const { t } = useTranslation();
+
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true);
+  };
 
   return (
     <div className="text-center bg-image hero">
       <video
-        className="hero__video"
+        className={`hero__video ${videoLoaded ? "loaded" : ""}`}
+        onLoad={handleVideoLoaded}
         playsInline
         autoPlay
         muted
@@ -61,7 +67,7 @@ export const Hero = () => {
               <motion.h5
                 custom={2}
                 variants={textAnimation}
-                className="pb-5 fw-normal hero__subtitle">
+                className="hero__subtitle">
                 {t("greeting")}
                 <br />
                 {t("subgreeting")}

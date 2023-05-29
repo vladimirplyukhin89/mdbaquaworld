@@ -20,7 +20,7 @@ export const Modal = () => {
   return (
     <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
       <MDBModalDialog>
-        <MDBModalContent>
+        <MDBModalContent className="mx-auto w-75">
           <MDBModalHeader>
             <MDBModalTitle>{t("modal_title")}</MDBModalTitle>
             <MDBBtn

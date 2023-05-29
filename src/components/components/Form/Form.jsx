@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import {
   MDBContainer,
   MDBInput,
   MDBBtn,
   MDBRipple,
   MDBCheckbox,
-  MDBTextArea
+  MDBTextArea,
+  MDBValidation,
+  MDBValidationItem
 } from "mdb-react-ui-kit";
 import { useTranslation } from "react-i18next";
 import { modalContext } from "../../../context";
@@ -16,11 +18,24 @@ import videoMp4 from "./video/form.mp4";
 import "./Form.css";
 
 export const Form = () => {
+  const [formValue, setFormValue] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: ""
+  });
   const { t } = useTranslation();
   const { toggleShow } = useContext(modalContext);
 
-  const handleSubmit = event => {
-    event.preventDefault();
+  const onChange = e => {
+    setFormValue({ ...formValue, [e.target.name]: e.target.value });
+    console.log(formValue);
+  };
+
+  const onSubmit = e => {
+    e.preventDefault();
+    console.log("Send");
+    setFormValue({ name: "", email: "", tel: "", message: "" });
     toggleShow();
   };
 

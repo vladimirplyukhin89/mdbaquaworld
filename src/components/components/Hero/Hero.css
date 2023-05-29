@@ -7,14 +7,38 @@
   min-width: 100%;
 }
 
+.loaded {
+  height: 488px;
+  width: 100%;
+  overflow: hidden;
+}
+
 .hero__wrapper {
   background-color: var(--bg-overlay);
 }
 
 .hero__title {
   word-break: break-word;
+  font-size: 2rem;
 }
 
 .hero__subtitle {
   max-width: 1100px;
+  font-weight: 400;
+  padding-bottom: 2rem;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__subtitle {
+    padding-bottom: 5rem;
+    font-size: 22px;
+    font-weight: 500;
+  }
 }
