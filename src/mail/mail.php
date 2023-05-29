@@ -11,7 +11,7 @@ function adopt($text) {
   return '=?UTF-8?B?'.base64_encode($text).'?=';
 }
 
-$to = 'vladimirplyukhin89@proton.me';
+$to = 'info@aquaworld.ltd';
 $subject = adopt('Заявка с сайта');
 $message = 'Сообщение';
 
@@ -26,10 +26,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   $headers = 'From: aquaworld@ltd'."\r\n";
   $headers .= 'Reply-To: aquaworld@ltd'."\r\n";
-  $headers .= 'X-Mailer: PHP/'.phpversion();
-
-  if (isset($_POST['submit'])) {
-    mail($to, $subject, $message, $headers);
-  }
+  $headers .= 'X-Mailer: PHP/'.phpversion(); 
 }
+
+
+if (mail($to, adopt($subject), $text, $headers )) {
+  http_response_code(200);
+  echo "Данные отправлены.";
+} else {
+  http_response_code(400);
+  echo "Ошибка. Данные не отправлены.";
+};
 ?>

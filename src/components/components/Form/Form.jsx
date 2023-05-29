@@ -125,7 +125,9 @@ export const Form = () => {
 
             <div className="form__button">
               <MDBRipple className="mb-4">
-                <MDBBtn type="submit">{t("send")}</MDBBtn>
+                <MDBBtn type="submit" name="submit">
+                  {t("send")}
+                </MDBBtn>
               </MDBRipple>
             </div>
           </form>
