@@ -27,36 +27,33 @@ export const Form = () => {
   const { t } = useTranslation();
   const { toggleShow } = useContext(modalContext);
 
-  const sendForm = async dataForm => {
+  const onChange = e => {
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+
     let response = await fetch(formPath, {
-      method: "POST",
+      method: POST,
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(dataForm)
+      body: JSON.stringify(formValue)
     });
 
     if (response.ok) {
       let result = await response.json();
       console.log(result);
-      setFormValue({ name: "", email: "", tel: "", message: "" });
       toggleShow();
     } else {
       let error = await response.json();
       console.error(error);
       alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
     }
-  };
 
-  const onChange = e => {
-    e.preventDefault();
-    const { name, value } = e.target;
-    setFormValue({ ...formValue, [name]: value });
-  };
-
-  const onSubmit = e => {
-    e.preventDefault();
-    sendForm(formValue);
+    setFormValue({ name: "", email: "", tel: "", message: "" });
   };
 
   return (
@@ -71,18 +68,18 @@ export const Form = () => {
         <div className="form__block">
           <form
             id="form"
-            onSubmit={onSubmit}
-            className="w-75 m-auto form-outline form-white"
+            onSubmit={handleSubmit}
             action={formPath}
-            method={POST}>
+            method={POST}
+            className="w-75 m-auto form-outline form-white">
             <MDBInput
               className="mb-4"
               type="text"
+              name="name"
               id="form3Example1"
               value={formValue.name}
               onChange={onChange}
               label={t("name")}
-              name="name"
               required
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
@@ -90,22 +87,22 @@ export const Form = () => {
             <MDBInput
               className="mb-4"
               type="email"
+              name="email"
               id="form1Example2"
               value={formValue.email}
               onChange={onChange}
               label={t("email")}
-              name="email"
               required
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
             <MDBInput
               className="mb-4"
               type="tel"
+              name="tel"
               id="form1Example3"
               value={formValue.tel}
               onChange={onChange}
               label={t("phone")}
-              name="tel"
               required
               style={{ backgroundColor: "rgba(0, 0, 0, 0.25)" }}
             />
