@@ -32,10 +32,29 @@ export const Form = () => {
     setFormValue({ ...formValue, [name]: value });
   };
 
+  const sendForm = async dataForm => {
+    let response = await fetch("../../../mail/mail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(dataForm)
+    });
+
+    if (response.ok) {
+      let result = await response.json();
+      console.log(result);
+      setFormValue({ name: "", email: "", tel: "", message: "" });
+      toggleShow();
+    } else {
+      console.error(result);
+      alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
+    }
+  };
+
   const onSubmit = e => {
     e.preventDefault();
-    setFormValue({ name: "", email: "", tel: "", message: "" });
-    toggleShow();
+    sendForm(formValue);
   };
 
   return (
@@ -122,9 +141,7 @@ export const Form = () => {
 
             <div className="form__button">
               <MDBRipple className="mb-4">
-                <MDBBtn type="submit" name="submit">
-                  {t("send")}
-                </MDBBtn>
+                <MDBBtn type="submit">{t("send")}</MDBBtn>
               </MDBRipple>
             </div>
           </form>

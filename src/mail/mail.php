@@ -1,6 +1,7 @@
 <?php
 function clear_data($val) {
   $val = trim($val);
+  $val = urldecode($val)
   $val = stripslashes($val);
   $val = htmlspecialchars($val);
 
@@ -30,11 +31,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-if (mail($to, adopt($subject), $text, $headers )) {
+if (mail($to, $subject, $text, $headers )) {
   http_response_code(200);
-  echo "Данные отправлены.";
+  echo ("Данные отправлены.");
 } else {
   http_response_code(400);
-  echo "Ошибка. Данные не отправлены.";
+  echo ("Ошибка. Данные не отправлены.");
 };
 ?>
