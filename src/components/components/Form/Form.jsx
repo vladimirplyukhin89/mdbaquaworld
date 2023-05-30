@@ -57,7 +57,7 @@ export const Form = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form" id="form">
       <video className="form__background" playsInline autoPlay muted loop>
         <source src={videoWebm} type="video/webm" />
         <source src={videoMp4} type="video/mp4" />
@@ -67,7 +67,6 @@ export const Form = () => {
       <MDBContainer fluid className="form__container">
         <div className="form__block">
           <form
-            id="form"
             onSubmit={handleSubmit}
             action={formPath}
             method={POST}

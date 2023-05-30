@@ -17,6 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $tel = clear_data($_POST["tel"]);
   $message = clear_data($_POST["message"]);
 
+  print_r($_POST);
+
   $to = 'info@aquaworld.ltd';
   $subject = adopt('Новая заявка с сайта');
 
