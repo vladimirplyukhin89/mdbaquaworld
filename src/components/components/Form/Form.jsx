@@ -10,7 +10,7 @@ import {
 } from "mdb-react-ui-kit";
 import { useTranslation } from "react-i18next";
 import { modalContext } from "../../../context";
-import { formPath } from "../../../constants/index";
+import { formPath, POST } from "../../../constants/index";
 
 import videoWebm from "./video/form.webm";
 import videoMp4 from "./video/form.mp4";
@@ -42,7 +42,8 @@ export const Form = () => {
       setFormValue({ name: "", email: "", tel: "", message: "" });
       toggleShow();
     } else {
-      console.error(result);
+      let error = await response.json();
+      console.error(error);
       alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
     }
   };
@@ -73,7 +74,7 @@ export const Form = () => {
             onSubmit={onSubmit}
             className="w-75 m-auto form-outline form-white"
             action={formPath}
-            method="POST">
+            method={POST}>
             <MDBInput
               className="mb-4"
               type="text"
