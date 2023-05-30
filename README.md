@@ -12,6 +12,12 @@
 - "react-dom": "^18.1.0",
 - "react-i18next": "^12.3.1",
 
+- Semantic HTML5 markup
+- CSS BEM naming for style
+- MDB React UI kit
+- Flexbox
+- Mobile-first workflow and React hooks
+
 ### Start:
 
 - "npm install"
@@ -24,3 +30,5 @@
 ### Connect:
 
 - This is [a link for my Github page](https://github.com/vladimirplyukhin89).
+
+### Version: 1.0.0

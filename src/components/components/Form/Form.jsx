@@ -111,13 +111,13 @@ export const Form = () => {
             />
 
             <MDBCol className="mb-4 text-white">
-              <small>
+              {/* <small>
                 {t("policy")} <br />
-                <a className="text-dark" target="_blank" href="Rights.pdf">
+                <a className="text-dark" target="_blank" href="./Rights.pdf">
                   {t("policy2")}{" "}
                 </a>
                 {t("policy3")}
-              </small>
+              </small> */}
             </MDBCol>
 
             <div className="form__button">
