@@ -52,7 +52,7 @@ export const Form = () => {
             id="form"
             onSubmit={onSubmit}
             className="w-75 m-auto form-outline form-white"
-            action="/mail/mail.php"
+            action="../../../mail/mail.php"
             method="POST">
             <MDBInput
               className="mb-4"
@@ -113,10 +113,7 @@ export const Form = () => {
             <MDBCol className="mb-4 text-white">
               <small>
                 {t("policy")} <br />
-                <a
-                  className="text-dark"
-                  target="_blank"
-                  href="../../../Rights.pdf">
+                <a className="text-dark" target="_blank" href="Rights.pdf">
                   {t("policy2")}{" "}
                 </a>
                 {t("policy3")}
