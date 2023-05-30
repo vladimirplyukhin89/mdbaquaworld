@@ -10,6 +10,7 @@ import {
 } from "mdb-react-ui-kit";
 import { useTranslation } from "react-i18next";
 import { modalContext } from "../../../context";
+import { formPath } from "../../../constants/index";
 
 import videoWebm from "./video/form.webm";
 import videoMp4 from "./video/form.mp4";
@@ -26,14 +27,8 @@ export const Form = () => {
   const { t } = useTranslation();
   const { toggleShow } = useContext(modalContext);
 
-  const onChange = e => {
-    e.preventDefault();
-    const { name, value } = e.target;
-    setFormValue({ ...formValue, [name]: value });
-  };
-
   const sendForm = async dataForm => {
-    let response = await fetch("../../../mail/mail.php", {
+    let response = await fetch(formPath, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -50,6 +45,12 @@ export const Form = () => {
       console.error(result);
       alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
     }
+  };
+
+  const onChange = e => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
   };
 
   const onSubmit = e => {
@@ -71,7 +72,7 @@ export const Form = () => {
             id="form"
             onSubmit={onSubmit}
             className="w-75 m-auto form-outline form-white"
-            action="../../../mail/mail.php"
+            action={formPath}
             method="POST">
             <MDBInput
               className="mb-4"
