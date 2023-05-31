@@ -1,2 +1,2 @@
-export const formPath = "../mail.php";
+export const formPath = "../mail/mail.php";
 export const POST = "POST";
