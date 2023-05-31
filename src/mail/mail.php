@@ -1,4 +1,9 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 function clear_data($val) {
   $val = trim($val);
   $val = stripslashes($val);
@@ -18,8 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = clear_data($postData["email"]);
   $tel = clear_data($postData["tel"]);
   $message = clear_data($postData["message"]);
-
-  print_r($postData);
 
   $to = 'info@aquaworld.ltd';
   $subject = adopt('Новая заявка с сайта');

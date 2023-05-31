@@ -32,15 +32,19 @@ export const Form = () => {
     setFormValue({ ...formValue, [name]: value });
   };
 
+  console.log(formPath);
+
   const handleSubmit = async e => {
     e.preventDefault();
+
+    const requestData = JSON.stringify(formValue);
 
     let response = await fetch(formPath, {
       method: POST,
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(formValue)
+      body: requestData
     });
 
     if (response.ok) {
@@ -53,7 +57,6 @@ export const Form = () => {
       // ? В будущем заменить на модальное окно с ошибкой
       alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
     }
-    console.log("formValue", formValue);
     setFormValue({ name: "", email: "", tel: "", message: "" });
   };
 
