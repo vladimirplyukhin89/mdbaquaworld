@@ -36,13 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (mail($to, $subject, $emailContent, $headers )) {
     http_response_code(200);
-    echo ("Данные успешно отправлены.");
+    echo json_encode(["message" => "Данные успешно отправлены."]);
   } else {
     http_response_code(400);
-    echo ("Ошибка при отправке данных.");
+    echo json_encode(["message" => "Ошибка при отправке данных."]);
   }
 } else {
   http_response_code(400);
-  echo "Неверный метод запроса.";
+  echo json_encode(["message" => "Неверный метод запроса."]);
 }
 ?>

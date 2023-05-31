@@ -32,31 +32,36 @@ export const Form = () => {
     setFormValue({ ...formValue, [name]: value });
   };
 
-  console.log(formPath);
-
   const handleSubmit = async e => {
     e.preventDefault();
 
     const requestData = JSON.stringify(formValue);
 
-    let response = await fetch(formPath, {
-      method: POST,
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: requestData
-    });
+    try {
+      const response = await fetch(formPath, {
+        method: POST,
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: requestData
+      });
 
-    if (response.ok) {
-      let result = await response.json();
-      console.log(result);
-      toggleShow();
-    } else {
-      let error = await response.json();
+      if (response.ok) {
+        const result = await response.json();
+        console.log(result);
+        toggleShow();
+      } else {
+        const error = await response.json();
+        console.error(error);
+        // ? В будущем заменить на модальное окно с ошибкой
+        alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
+      }
+    } catch (error) {
       console.error(error);
       // ? В будущем заменить на модальное окно с ошибкой
-      alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
+      alert("Произошла ошибка. Попробуйте позже");
     }
+
     setFormValue({ name: "", email: "", tel: "", message: "" });
   };
 
