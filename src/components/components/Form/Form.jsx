@@ -50,10 +50,10 @@ export const Form = () => {
     } else {
       let error = await response.json();
       console.error(error);
-      // ? В будущем заменить на модельное окно с ошибкой
+      // ? В будущем заменить на модальное окно с ошибкой
       alert("К сожалению, ошибка при отправки формы. Попробуйте позже");
     }
-
+    console.log("formValue", formValue);
     setFormValue({ name: "", email: "", tel: "", message: "" });
   };
 

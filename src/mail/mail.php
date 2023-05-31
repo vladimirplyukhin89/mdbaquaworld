@@ -12,12 +12,14 @@ function adopt($text) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = clear_data($_POST["name"]);
-  $email = clear_data($_POST["email"]);
-  $tel = clear_data($_POST["tel"]);
-  $message = clear_data($_POST["message"]);
+  $postData = json_decode(file_get_contents("php://input"), true);
 
-  print_r($_POST);
+  $name = clear_data($postData["name"]);
+  $email = clear_data($postData["email"]);
+  $tel = clear_data($postData["tel"]);
+  $message = clear_data($postData["message"]);
+
+  print_r($postData);
 
   $to = 'info@aquaworld.ltd';
   $subject = adopt('Новая заявка с сайта');
@@ -25,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $emailContent = 'Имя: '.$name."\n".'Email: '.$email."\n".
     'Tel: '.$tel."\n".'Message: '.$message."\n";
 
-  $headers = "From: info@aquaworld.ltd" . "\r\n" 
+  $headers = "From: aquaworld.ltd" . "\r\n" 
     . "Reply-To: " . $email . "\r\n"
     . "X-Mailer: PHP/" . phpversion();
 
