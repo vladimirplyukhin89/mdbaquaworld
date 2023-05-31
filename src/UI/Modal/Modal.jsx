@@ -14,6 +14,8 @@ import { useTranslation } from "react-i18next";
 
 import { modalContext } from "../../context/modalContext";
 
+import "./Modal.css";
+
 export const Modal = () => {
   const { basicModal, setBasicModal, toggleShow } = useContext(modalContext);
   const { t } = useTranslation();
@@ -34,9 +36,11 @@ export const Modal = () => {
       <MDBModalDialog>
         <MDBModalContent className="mx-auto w-75">
           {pause ? (
-            <MDBSpinner color="primary">
-              <span className="visually-hidden">Loading...</span>
-            </MDBSpinner>
+            <div className="loading">
+              <MDBSpinner color="primary">
+                <span className="visually-hidden">Loading...</span>
+              </MDBSpinner>
+            </div>
           ) : (
             <>
               <MDBModalHeader>
