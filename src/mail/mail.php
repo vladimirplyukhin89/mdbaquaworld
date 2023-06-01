@@ -32,7 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   $headers = "From: aquaworld.ltd" . "\r\n" 
     . "Reply-To: " . $email . "\r\n"
-    . "X-Mailer: PHP/" . phpversion();
+    . "X-Mailer: PHP/" . phpversion() . "\r\n"
+    . "Content-Type: text/plain; charset=UTF-8\r\n"
+    . "Content-Transfer-Encoding: 8bit\r\n";
 
   if (mail($to, $subject, $emailContent, $headers )) {
     http_response_code(200);

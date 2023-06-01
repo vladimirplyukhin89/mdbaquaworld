@@ -1,6 +1,6 @@
-.loading {
+.loading-modal {
   background-color: var(--clr-white);
-  width: 300px;
+  width: auto;
   height: 190px;
   border-radius: 0.5rem;
 

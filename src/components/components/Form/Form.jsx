@@ -48,7 +48,6 @@ export const Form = () => {
 
       if (response.ok) {
         const result = await response.json();
-        console.log(result);
         toggleShow();
       } else {
         const error = await response.json();

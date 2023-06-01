@@ -36,8 +36,8 @@ export const Modal = () => {
       <MDBModalDialog>
         <MDBModalContent className="mx-auto w-75">
           {pause ? (
-            <div className="loading">
-              <MDBSpinner color="primary">
+            <div className="loading-modal">
+              <MDBSpinner color="primary mx-auto">
                 <span className="visually-hidden">Loading...</span>
               </MDBSpinner>
             </div>
