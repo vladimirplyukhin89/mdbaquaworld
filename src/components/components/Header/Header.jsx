@@ -31,7 +31,7 @@ export const Header = () => {
     <header className="mb-3" id="header">
       <MDBNavbar expand="lg" light bgColor="white">
         <MDBContainer fluid>
-          <MDBNavbarBrand href="#">
+          <MDBNavbarBrand href="https://www.aquaworld63.ru/">
             <img src={logo} alt="Logo" width={120} loading="lazy" />
           </MDBNavbarBrand>
 
